@@ -1,0 +1,47 @@
+@forward 'mixins';
+
+// Fonts
+@font-face {
+    font-family: "Avenir";
+    font-weight: 700;
+    font-style: normal;
+    src: url("/assets/Font/AvenirNextLTPro-Bold.otf");
+}
+@font-face {
+    font-family: "Avenir";
+    font-weight: 400;
+    font-style: normal;
+    src: url("/assets/Font/AvenirNextLTPro-Regular.otf");
+}
+@font-face {
+    font-family: "Avenir";
+    font-weight: 600;
+    font-style: normal;
+    src: url("/assets/Font/AvenirNextLTPro-Demi.otf");
+}
+@font-face {
+    font-family: "Avenir";
+    font-weight: 400;
+    font-style: normal;
+    src: url("/assets/Font/AvenirNextLTPro-Regular.ttf");
+}
+@font-face {
+    font-family: "Avenir";
+    font-weight: 700;
+    font-style: normal;
+    src: url("/assets/Font/AvenirNextLTPro-Bold.ttf");
+}
+@font-face {
+    font-family: "Avenir";
+    font-weight: 600;
+    font-style: normal;
+    src: url("/assets/Font/AvenirNextLTPro-Demi.ttf");
+}
+
+// Colors
+$BandSite-Black: #323232;
+$Silver: #AFAFAF;
+$White: #FFFFFF;
+$BandSite-DarkBlack: #000000;
+$Mercury: #E1E1E1;
+$Alabaster: #FAFAFA;

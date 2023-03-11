@@ -1,0 +1,28 @@
+@import 'variables';
+
+// Text Colors
+@mixin primary-text-dark {
+    font-family: $Avenir;
+    color: $BandSite-Black;
+}
+@mixin secondary-text {
+    font-family: $Avenir;
+    color: $Silver;
+}
+@mixin primary-text-white {
+    font-family: $Avenir;
+    color: $white;
+}
+// Font Sizes
+@mixin page-header {
+    @include primary-text;
+    font-size: 60px;
+    line-height: 68px;
+    font-weight: 700;
+}
+@mixin section-header {
+    @include primary-text;
+    font-size: 36px;
+    line-height: 68px;
+    font-weight: 700;
+}
