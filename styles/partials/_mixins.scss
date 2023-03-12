@@ -22,7 +22,6 @@
     @media (min-width: $bp-tablet) { // Page Header - DeskTop & Tablet
         font-size: 24px;
         line-height: 32px;
-        font-weight: 700;
     }
 }
 @mixin section-header { // Section Header - Mobile
@@ -31,10 +30,8 @@
     line-height: 68px;
     font-weight: 700;
     @media (min-width: $bp-tablet) { // Section Header - DeskTop & Tablet
-        font-family: Avenir;
         font-size: 24px;
         line-height: 32px;
-        font-weight: 700;
     }
 }
 @mixin subheader { // Subheader - Mobile
@@ -43,10 +40,8 @@
     line-height: 32px;
     font-weight: 600;
     @media (min-width: $bp-tablet) { // Subheader - DeskTop & Tablet
-        font-family: Avenir;
         font-size: 14px;
         line-height: 22px;
-        font-weight: 600;
     }
 }
 @mixin body-copy { // Body Copy - Mobile
@@ -89,11 +84,17 @@
     max-height: 20px;
     max-width: 120px;
 }
-// Header & Footer Links
-@mixin header-footer-link {
+// Header & Footer Inactive Links
+@mixin silver-inactive-link {
+    a {
+        text-decoration: none;
+        font-family: Avenir;
+        color: $Mercury;
+    }
+}
+@mixin white-active-link {
     a {
         text-decoration: none;
         @include primary-text-white;
-        font-family: Avenir;
     }
 }

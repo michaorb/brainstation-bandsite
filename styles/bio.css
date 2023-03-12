@@ -37,6 +37,7 @@
 header {
   background-color: #323232;
   color: #FFFFFF;
+  padding-top: 5%;
 }
 header .navigation-bar {
   text-align: center;
@@ -46,11 +47,28 @@ header .navigation-bar__left .site-logo {
   max-width: 120px;
 }
 header .navigation-bar__right .navigation-menu {
-  list-style: none;
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 header .navigation-bar__right .navigation-menu a {
   text-decoration: none;
   font-family: Avenir;
-  color: #FFFFFF;
+  color: #E1E1E1;
+}
+header .navigation-bar__right .navigation-menu li {
+  width: 50%;
+  padding-bottom: 5%;
+}
+header .navigation-bar__right .navigation-menu .navigation-menu--current {
+  border-bottom: 5px solid;
+  border-color: #FFFFFF;
+}
+header .navigation-bar__right .navigation-menu .navigation-menu--current a {
+  text-decoration: none;
   font-family: Avenir;
+  color: #FFFFFF;
 }/*# sourceMappingURL=bio.css.map */

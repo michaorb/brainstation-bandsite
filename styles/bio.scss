@@ -3,14 +3,30 @@
 
 header {
     @include light-on-dark;
+    padding-top: 5%;
+    // padding-bottom: 5%;
     .navigation-bar {
         text-align: center;
         &__left .site-logo {
             @include Bandsite-Logo;
         }
         &__right .navigation-menu {
-            list-style: none;
-            @include header-footer-link
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 0;
+            @include silver-inactive-link;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            li {
+                width: 50%;
+                padding-bottom: 5%;
+            }
+            .navigation-menu--current {
+                border-bottom: 5px solid;
+                border-color: $White;
+                @include white-active-link;
             }
         }
     }
+}
