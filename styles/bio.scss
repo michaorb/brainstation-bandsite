@@ -1,0 +1,16 @@
+@use "partials/variables" as *;
+@use "partials/mixins" as *;
+
+header {
+    @include light-on-dark;
+    .navigation-bar {
+        text-align: center;
+        &__left .site-logo {
+            @include Bandsite-Logo;
+        }
+        &__right .navigation-menu {
+            list-style: none;
+            @include header-footer-link
+            }
+        }
+    }

@@ -1,28 +1,99 @@
-@import 'variables';
+@use "variables" as *;
 
-// Text Colors
-@mixin primary-text-dark {
-    font-family: $Avenir;
+// Font Colors Only
+@mixin primary-text-dark { //Primary text color for dark on light background. Dark background color.*/
+    font-family: Avenir; 
     color: $BandSite-Black;
 }
-@mixin secondary-text {
-    font-family: $Avenir;
+@mixin secondary-text { //Secondary text color. Inactive CTA text color.*/
+    font-family: Avenir;
     color: $Silver;
 }
-@mixin primary-text-white {
-    font-family: $Avenir;
-    color: $white;
+@mixin primary-text-white { //Primary text color for light on dark background. Light color background. Active CTA text color.*/
+    font-family: Avenir;
+    color: $White;
 }
-// Font Sizes
-@mixin page-header {
-    @include primary-text;
+// Font Styles Only (without colors)
+@mixin page-header { // Page Header - Mobile
+    font-family: Avenir;
     font-size: 60px;
     line-height: 68px;
     font-weight: 700;
+    @media (min-width: $bp-tablet) { // Page Header - DeskTop & Tablet
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 700;
+    }
 }
-@mixin section-header {
-    @include primary-text;
+@mixin section-header { // Section Header - Mobile
+    font-family: Avenir;
     font-size: 36px;
     line-height: 68px;
     font-weight: 700;
+    @media (min-width: $bp-tablet) { // Section Header - DeskTop & Tablet
+        font-family: Avenir;
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 700;
+    }
+}
+@mixin subheader { // Subheader - Mobile
+    font-family: Avenir;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+    @media (min-width: $bp-tablet) { // Subheader - DeskTop & Tablet
+        font-family: Avenir;
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 600;
+    }
+}
+@mixin body-copy { // Body Copy - Mobile
+    font-family: Avenir;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    @media (min-width: $bp-tablet) { // Body Copy - DeskTop & Tablet
+        font-size: 13px;
+        line-height: 18px;
+    }
+}
+@mixin footer-copy { // Footer - Mobile
+    font-family: Avenir;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    @media (min-width: $bp-tablet) { // Footer - DeskTop & Tablet
+        font-size: 13px;
+        line-height: 18px;
+    }
+}
+@mixin labels-button-text { // Labels and Buttons Text - Mobile
+    font-family: Avenir;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+    @media (min-width: $bp-tablet) { // Labels and Buttons Text - DeskTop & Tablet
+        font-size: 10px;
+        line-height: 20px;
+    }
+}
+// Header / Footer Light on Dark Background Styles
+@mixin light-on-dark {
+    background-color: $BandSite-Black;
+    color: $White;
+}
+// Logo
+@mixin Bandsite-Logo {
+    max-height: 20px;
+    max-width: 120px;
+}
+// Header & Footer Links
+@mixin header-footer-link {
+    a {
+        text-decoration: none;
+        @include primary-text-white;
+        font-family: Avenir;
+    }
 }

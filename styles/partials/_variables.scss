@@ -1,5 +1,3 @@
-@forward 'mixins';
-
 // Fonts
 @font-face {
     font-family: "Avenir";
@@ -45,3 +43,7 @@ $White: #FFFFFF;
 $BandSite-DarkBlack: #000000;
 $Mercury: #E1E1E1;
 $Alabaster: #FAFAFA;
+
+// Media Breakpoints
+$bp-desktop: 1280px;
+$bp-tablet: 768px;
