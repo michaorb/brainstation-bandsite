@@ -63,6 +63,16 @@ header .navigation-bar__right .navigation-menu li {
   width: 50%;
   padding-bottom: 5%;
 }
+header .navigation-bar__right .navigation-menu li:hover {
+  text-decoration: none;
+  border-bottom: 5px solid;
+  border-color: #FFFFFF;
+}
+header .navigation-bar__right .navigation-menu li:hover a {
+  text-decoration: none;
+  font-family: Avenir;
+  color: #FFFFFF;
+}
 header .navigation-bar__right .navigation-menu .navigation-menu--current {
   border-bottom: 5px solid;
   border-color: #FFFFFF;

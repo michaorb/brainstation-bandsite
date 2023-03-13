@@ -84,17 +84,25 @@
     max-height: 20px;
     max-width: 120px;
 }
-// Header & Footer Inactive Links
-@mixin silver-inactive-link {
+// Links
+@mixin silver-inactive-link { //Inactive State
     a {
         text-decoration: none;
         font-family: Avenir;
         color: $Mercury;
     }
 }
-@mixin white-active-link {
+@mixin white-active-link { //Active State
     a {
         text-decoration: none;
         @include primary-text-white;
+    }
+}
+@mixin hover-state-link { //Hover State
+    &:hover {
+        text-decoration: none;
+        border-bottom: 5px solid;
+        border-color: $White;
+        @include white-active-link;    
     }
 }
