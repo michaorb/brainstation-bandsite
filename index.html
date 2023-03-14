@@ -79,62 +79,65 @@
             </col>
         </section>
         <!-- ### Footer Stars Here ### -->
-        <footer class="contact"> 
-            <h2>Get in Touch</h2> <!--main header of footer -->
-            <div class="footer__social-icons">
-                <img src="/assets/Icons/SVG/Icon-instagram.svg" alt="instagram">
-                <img src="/assets/Icons/SVG/Icon-facebook.svg" alt="facebook">
-                <img src="/assets/Icons/SVG/Icon-twitter.svg" alt="twitter">
-            </div>
-            <div class="footer__logo">
-                <img class="site-logo" src="/assets/Logo/Logo-bandsite.svg">
-            </div>
+        <footer class="contact"> <!--contains entire footer section-->
+            <section class="contact__header"> <!--contains the main header includes the section heading, the social media icons, and site logo-->
+                <h2>Get in Touch</h2> <!--section heading -->
+                <div class="contact__header-icons"> <!--social media icons-->
+                    <img src="/assets/Icons/SVG/Icon-instagram.svg" alt="instagram">
+                    <img src="/assets/Icons/SVG/Icon-facebook.svg" alt="facebook">
+                    <img src="/assets/Icons/SVG/Icon-twitter.svg" alt="twitter">
+                </div>
+            </section>
             <!-- Separate div containing 3 columns for 3 of the band's main contacts/agents/reps starts here -->
-            <div class="footer__contacts">
-                <!--column 1, first contact starts -->
-                <col class="contacts__cam-adams">
-                    <section class="footer__contacts-name"> <!--contains their name and where they work -->
+            <section class="contact__contacts">
+                <col class="contact__contacts-col1">
+                    <section class="contact__contacts-name"> <!--contains their name and where they work -->
                         <p><b>Cam Adams</b></p>
                         <p><b>The Bees Knees Management</b>
                     </section>
-                    <section class="footer__contacts-location"> <!--contains their location info -->
+                    <section class="contact__contacts-location"> <!--contains their location info -->
                         <br>503 Broadway Penthouse,
                         <br>New York, NY 10012, USA
                     </section>
-                    <section class="footer__contacts-email"> <!--contains their email -->
+                    <section class="contact__contacts-email"> <!--contains their email -->
                         <br>info@thebeesknees.com</p>
                     </section>
                 </col>
                 <!--column 2, second contact -->
-                <col class="contacts__pearl-gregg">
-                    <section class="footer__contacts-name"> <!--contains their name and where they work -->
+                <col class="contact__contacts-col2">
+                    <section class="contact__contacts-name"> <!--contains their name and where they work -->
                         <p><b>Pearl Gregg</b></p>
                         <p><b>Limitless Artist Group</b>
                     </section>
-                    <section class="footer__contacts-location"> <!--contains their location info -->
+                    <section class="contact__contacts-location"> <!--contains their location info -->
                         <br>Booking Agent for
                         <br>US / South America / Japan
                     </section>
-                    <section class="footer__contacts-email"> <!--contains their email -->
+                    <section class="contact__contacts-email"> <!--contains their email -->
                         <br>pearl.gregg@limitlessag.com</p>
                     </section>
                 </col>
                 <!--column 3, third contact -->
-                <col class="contacts__carson-whyte">
-                    <section class="footer__contacts-name"> <!--contains their name and where they work -->
+                <col class="contact__contacts-col3">
+                    <section class="contact__contacts-name"> <!--contains their name and where they work -->
                         <p><b>Carson Whyte</b></p>
                         <p><b>ARCH Entertainment</b>
                     </section>
-                    <section class="footer__contacts-location"> <!--contains their location info -->
+                    <section class="contact__contacts-location"> <!--contains their location info -->
                         <br>Booking Agent for
                         <br>UK / EU / AU
                     </section>
-                    <section class="footer__contacts-email"> <!--contains their email -->
+                    <section class="contact__contacts-email"> <!--contains their email -->
                         <br>cwhyte@archentertainment.com</p>
                     </section>
                 </col>
+            </section>
+            <div class="contact__logo"> <!--site logo placement for tablet & desktop-->
+                <img class="site-logo" src="/assets/Logo/Logo-bandsite.svg">
             </div>
-            <sup>Copyright The Bees Knees © 2021 All Rights Reserved</sup>
+            <div class="contact__copyright">
+                <sup>Copyright The Bees Knees © 2021 All Rights Reserved</sup>
+            </div>
         </footer>
         <!-- ### Footer Ends Here ### -->
     </main>
