@@ -1,16 +1,15 @@
 @use "variables" as *;
 @use "mixins" as *;
 
-header {
+header { // *** The Header / Navigation Bar
     @include light-on-dark;
     display: flex;
     flex-direction: column;
-    width: auto;
+    width: 100vw;
     height: auto;
-    .navigation-bar { //navigation
+    .navigation-bar { // navigation
         text-align: center;
-
-        @media (min-width: $bp-tablet) {
+        @media (min-width: $bp-tablet) { // media query for entire nav bar
             display: flex;
             margin: 0;
             width: auto;
@@ -20,36 +19,36 @@ header {
             gap: 5%;
         }
 
-        &__left .site-logo { //site logo
+        &__left .site-logo { // site logo
             padding-top: 5%;
-            @include Bandsite-Logo;
-            @media (min-width: $bp-tablet) {
+            @include BandSite-Logo;
+            @media (min-width: $bp-tablet) { // media query for site-logo
                 padding-left: 5vw;
             }
         }
-        &__right .navigation-menu { //menu items
+        &__right .navigation-menu { // menu items
             list-style-type: none;
             padding: 0;
             margin-bottom: 0;
-            @include silver-inactive-link; //inactive links
+            @include silver-inactive-link; // inactive links
             display: flex;
             flex-direction: row;
             justify-content: space-around;
-            @media (min-width: $bp-tablet) {
+            @media (min-width: $bp-tablet) { // media query for nav menu
                 gap: 5vw;
             }
             li {
                 width: 50%;
                 padding-bottom: 5%;
-                @include hover-state-link; //hover state link
+                @include hover-state-link; // hover state link
 
-                @media (min-width: $bp-tablet) {
+                @media (min-width: $bp-tablet) { // media query for li elements
                     width: auto;
                     padding-top: 20%;
                     padding-bottom: 20%;
                 }
             }
-            .navigation-menu--current { //active link
+            .navigation-menu--current { // active link
                 border-bottom: 5px solid;
                 border-color: $White;
                 @include white-active-link;
@@ -57,26 +56,25 @@ header {
         }
     }
 }
-.contact {
+.contact { // *** The Footer / Contact Section
     @include light-on-dark;
     @include primary-text-white;
     display: flex;
     flex-direction: column;
-    width: auto;
+    width: 100vw;
     height: auto;
     padding-top: 10%;
-    padding-left: 5%;
-    padding-right: 5%;
     padding-bottom: 10%;
     &__header { //section header
         display: flex;
         flex-direction: column;
+        padding-left: 5%;
         @include subheader;
         h2 {
             margin: 0;
             font-weight: 600; 
         }
-        .contact__header-icons {
+        .contact__header-icons { // section header - social media icons
             margin-top: 5%;
             margin-bottom: 5%;
             display: flex;
@@ -86,13 +84,27 @@ header {
                 height: auto;
             }
         }
+        @media (min-width: $bp-tablet) {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+    @media (min-width: $bp-tablet) { // media query for section header
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
     &__contacts { //contacts list
         padding-top: 5%;
+        padding-left: 5%;
         padding-bottom: 5%;
-        display: flex;
-        flex-direction: column;
         @include footer-copy;
+        .contact__contacts-column {
+            @media (min-width: $bp-tablet) { // media query for contacts column
+                display: flex;
+                flex-direction: column;
+            }
+        }
         .contact__contacts-name {
             line-height: 10px;
         }
@@ -102,19 +114,25 @@ header {
         .contact__contacts-email {
             padding-bottom: 5%;
         }
+        @media (min-width: $bp-tablet) {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
     }
     &__logo { //site logo
         margin: 0;
         padding-top: 0;
+        padding-left: 5%;
         padding-bottom: 5%;
+        @media (min-width: $bp-tablet) {
+            position: absolute;
+            right: 0;
+            padding-right: 5%;
+        }
     }
     &__copyright { //copyright
         font-size: smaller;
-    }
-}
-
-@media (max-width: $bp-tablet) {
-    .contact__logo {
-        display: flex;
+        padding-left: 5%;
     }
 }

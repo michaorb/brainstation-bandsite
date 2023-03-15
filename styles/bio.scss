@@ -1,3 +1,53 @@
 @use "partials/global" as *;
 @use "partials/variables" as *;
 @use "partials/mixins" as *;
+
+.hero { // Hero
+    background-image: 
+        linear-gradient($BandSite-Black-Overlay, $BandSite-Black-Overlay),
+        url("/assets/Images/hero-bio.jpg");
+    width: 100vw;
+    height: 50vh;
+    background-size: cover;
+    &__left #hero-title { // hero title
+        @include page-header;
+        @include primary-text-white;
+        margin: 0;
+    }
+}
+.about { // About 
+    h2 {
+        @include section-header;
+        @include primary-text-dark;
+    }
+    img {
+        width: 100vw;
+        height: 50vh;
+        background-size: cover;
+    }
+    #teddy-quote {
+        @include body-copy;
+        font-weight: 600;
+        line-height: 25px;
+    }
+    &__bio {
+        h3 {
+            @include subheader;
+            @include primary-text-dark;
+        }
+        p {
+            @include body-copy;
+        }
+    }
+}
+.gallery { // Gallery
+    h2 {
+        @include section-header;
+        @include primary-text-dark;
+    }
+    img {
+        width: 100vw;
+        height: auto;
+        background-size: cover;
+    }
+}

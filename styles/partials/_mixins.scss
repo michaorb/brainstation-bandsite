@@ -2,21 +2,21 @@
 
 // Font Colors Only
 @mixin primary-text-dark { //Primary text color for dark on light background. Dark background color.*/
-    font-family: Avenir; 
+    font-family: 'Avenir'; 
     color: $BandSite-Black;
 }
 @mixin secondary-text { //Secondary text color. Inactive CTA text color.*/
-    font-family: Avenir;
+    font-family: 'Avenir';
     color: $Silver;
 }
 @mixin primary-text-white { //Primary text color for light on dark background. Light color background. Active CTA text color.*/
-    font-family: Avenir;
+    font-family: 'Avenir';
     color: $White;
 }
 // Font Styles Only (without colors)
 @mixin page-header { // Page Header - Mobile
     h1 {
-        font-family: Avenir;
+        font-family: 'Avenir';
         font-size: 60px;
         line-height: 68px;
         font-weight: 700;
@@ -28,7 +28,7 @@
 }
 @mixin section-header { // Section Header - Mobile
     h2 {
-        font-family: Avenir;
+        font-family: 'Avenir';
         font-size: 36px;
         line-height: 68px;
         font-weight: 700;
@@ -39,17 +39,19 @@
     }
 }
 @mixin subheader { // Subheader - Mobile
-    font-family: Avenir;
-    font-size: 24px;
-    line-height: 32px;
-    font-weight: 600;
-    @media (min-width: $bp-tablet) { // Subheader - DeskTop & Tablet
-        font-size: 14px;
-        line-height: 22px;
+    h3 {
+        font-family: 'Avenir';
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 600;
+        @media (min-width: $bp-tablet) { // Subheader - DeskTop & Tablet
+            font-size: 14px;
+            line-height: 22px;
+        }
     }
 }
 @mixin body-copy { // Body Copy - Mobile
-    font-family: Avenir;
+    font-family: 'Avenir';
     font-size: 14px;
     line-height: 22px;
     font-weight: 400;
@@ -59,7 +61,7 @@
     }
 }
 @mixin footer-copy { // Footer - Mobile
-    font-family: Avenir;
+    font-family: 'Avenir';
     font-size: 14px;
     line-height: 20px;
     font-weight: 400;
@@ -69,7 +71,7 @@
     }
 }
 @mixin labels-button-text { // Labels and Buttons Text - Mobile
-    font-family: Avenir;
+    font-family: 'Avenir';
     font-size: 12px;
     line-height: 20px;
     font-weight: 700;
@@ -84,7 +86,7 @@
     color: $White;
 }
 // Logo
-@mixin Bandsite-Logo {
+@mixin BandSite-Logo {
     max-height: 20px;
     max-width: 120px;
 }
@@ -92,7 +94,7 @@
 @mixin silver-inactive-link { //Inactive State
     a {
         text-decoration: none;
-        font-family: Avenir;
+        font-family: 'Avenir';
         color: $Mercury;
     }
 }

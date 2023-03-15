@@ -43,10 +43,10 @@
             Contains article class for band bio section, nesting two separate column classes for the left and right side ### -->
         <section class="about">
             <h2>About the Musicians</h2> <!--main header for about section -->
-            <img src="/assets/Images/hero-bio.jpg" alt=""> <!--Image for "About" section -->
+            <img src="/assets/Images/band.jpg" alt=""> <!--Image for "About" section -->
             <!-- Band quote underneath image starts here -->
-            <q>We push each other to be the best. It's not uncommon for one of us to say 'this needs to be better, back to the drawing board'</q>
-            <p id="teddy-quote">- Bryan Teddy, lead vocalist of The Bees Knees</p>
+            <p id="teddy-quote"><q>We push each other to be the best. It's not uncommon for one of us to say 'this needs to be better, back to the drawing board'</q>
+            <br>- Bryan Teddy, lead vocalist of The Bees Knees</p>
             <!-- The band bio section starts here -->
             <article class="about__bio">
                 <h3>The Bees Knees</h3> <!--band bio header -->
@@ -90,7 +90,7 @@
             </section>
             <!-- Separate div containing 3 columns for 3 of the band's main contacts/agents/reps starts here -->
             <section class="contact__contacts">
-                <col class="contact__contacts-col1">
+                <div class="contact__contacts-column">
                     <section class="contact__contacts-name"> <!--contains their name and where they work -->
                         <p><b>Cam Adams</b></p>
                         <p><b>The Bees Knees Management</b>
@@ -102,9 +102,9 @@
                     <section class="contact__contacts-email"> <!--contains their email -->
                         <br>info@thebeesknees.com</p>
                     </section>
-                </col>
+                </div>
                 <!--column 2, second contact -->
-                <col class="contact__contacts-col2">
+                <div class="contact__contacts-column">
                     <section class="contact__contacts-name"> <!--contains their name and where they work -->
                         <p><b>Pearl Gregg</b></p>
                         <p><b>Limitless Artist Group</b>
@@ -116,9 +116,9 @@
                     <section class="contact__contacts-email"> <!--contains their email -->
                         <br>pearl.gregg@limitlessag.com</p>
                     </section>
-                </col>
+                </div>
                 <!--column 3, third contact -->
-                <col class="contact__contacts-col3">
+                <div class="contact__contacts-column">
                     <section class="contact__contacts-name"> <!--contains their name and where they work -->
                         <p><b>Carson Whyte</b></p>
                         <p><b>ARCH Entertainment</b>
@@ -130,9 +130,9 @@
                     <section class="contact__contacts-email"> <!--contains their email -->
                         <br>cwhyte@archentertainment.com</p>
                     </section>
-                </col>
+                </div>
             </section>
-            <div class="contact__logo"> <!--site logo placement for tablet & desktop-->
+            <div class="contact__logo"> <!--site logo-->
                 <img class="site-logo" src="/assets/Logo/Logo-bandsite.svg">
             </div>
             <div class="contact__copyright">
