@@ -3,50 +3,61 @@
 @use "partials/mixins" as *;
 
 .hero { // Hero
+    @include padding-left-right;
     background-image: 
         linear-gradient($BandSite-Black-Overlay, $BandSite-Black-Overlay),
         url("/assets/Images/hero-bio.jpg");
-    width: 100vw;
-    height: 50vh;
-    background-size: cover;
-    &__left #hero-title { // hero title
+        width: auto;
+        height: 35vh;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+    &__left { // hero title
         @include page-header;
         @include primary-text-white;
         margin: 0;
     }
 }
 .about { // About 
+    @include padding-left-right;
+    @include section-header;
+    @include body-copy;
     h2 {
-        @include section-header;
         @include primary-text-dark;
     }
-    img {
-        width: 100vw;
-        height: 50vh;
+    img { // Band Image - Mobile
+        width: 100%;
+        height: auto;
         background-size: cover;
+        @media (min-width: $bp-tablet) {
+            width: 80%;
+        }
+        @include section-image;
     }
-    #teddy-quote {
-        @include body-copy;
+    &__image--center { // Band Image - Tablet & Desktop 
+        @media (min-width: $bp-tablet) {
+            display: flex;
+            justify-content: center;
+        }
+    }
+    #teddy-quote { // Band Quote
         font-weight: 600;
         line-height: 25px;
     }
-    &__bio {
-        h3 {
-            @include subheader;
-            @include primary-text-dark;
-        }
-        p {
-            @include body-copy;
-        }
+    &__bio { // Bio Text
+        @include subheader;
+        @include primary-text-dark;
+        @include body-copy;
     }
 }
 .gallery { // Gallery
+    @include padding-left-right;
     h2 {
         @include section-header;
         @include primary-text-dark;
     }
     img {
-        width: 100vw;
+        width: 100%;
         height: auto;
         background-size: cover;
     }

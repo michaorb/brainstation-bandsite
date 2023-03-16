@@ -1,6 +1,9 @@
 @use "variables" as *;
 @use "mixins" as *;
 
+body {
+    margin: 0;
+}
 header { // *** The Header / Navigation Bar
     @include light-on-dark;
     display: flex;
@@ -59,17 +62,16 @@ header { // *** The Header / Navigation Bar
 .contact { // *** The Footer / Contact Section
     @include light-on-dark;
     @include primary-text-white;
+    @include padding-left-right;
+    @include padding-top-bottom;
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: auto;
     height: auto;
-    padding-top: 10%;
-    padding-bottom: 10%;
-    &__header { //section header
+    &__header { // section header
         display: flex;
         flex-direction: column;
-        padding-left: 5%;
-        @include subheader;
+        @include section-header;
         h2 {
             margin: 0;
             font-weight: 600; 
@@ -78,27 +80,27 @@ header { // *** The Header / Navigation Bar
             margin-top: 5%;
             margin-bottom: 5%;
             display: flex;
-            column-gap: 10%;
+            column-gap: 30px;
             img {
-                width: 10%;
-                height: auto;
+                width: auto;
+                height: 20px;
             }
         }
         @media (min-width: $bp-tablet) {
             display: flex;
             flex-direction: row;
+            align-items: center;
+            column-gap: 20px;
         }
     }
-    @media (min-width: $bp-tablet) { // media query for section header
+    @media (min-width: $bp-tablet) { // media query for entire contact section
         display: flex;
         flex-direction: column;
         align-items: flex-start;
     }
     &__contacts { //contacts list
-        padding-top: 5%;
-        padding-left: 5%;
-        padding-bottom: 5%;
         @include footer-copy;
+        @include padding-top-bottom;
         .contact__contacts-column {
             @media (min-width: $bp-tablet) { // media query for contacts column
                 display: flex;
@@ -114,25 +116,26 @@ header { // *** The Header / Navigation Bar
         .contact__contacts-email {
             padding-bottom: 5%;
         }
-        @media (min-width: $bp-tablet) {
+        @media (min-width: $bp-tablet) { // media query for contacts list
             display: flex;
             flex-direction: row;
             align-items: center;
+            column-gap: 60px;
         }
     }
-    &__logo { //site logo
+    &__logo { // site logo
         margin: 0;
         padding-top: 0;
-        padding-left: 5%;
+        // padding-left: 5%;
         padding-bottom: 5%;
         @media (min-width: $bp-tablet) {
             position: absolute;
             right: 0;
             padding-right: 5%;
+            padding-top: 20px;
         }
     }
-    &__copyright { //copyright
+    &__copyright { // copyright
         font-size: smaller;
-        padding-left: 5%;
     }
 }

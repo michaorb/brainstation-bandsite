@@ -17,9 +17,9 @@
 @mixin page-header { // Page Header - Mobile
     h1 {
         font-family: 'Avenir';
-        font-size: 60px;
+        font-size: 1.8rem;
         line-height: 68px;
-        font-weight: 700;
+        font-weight: 600;
         @media (min-width: $bp-tablet) { // Page Header - DeskTop & Tablet
             font-size: 24px;
             line-height: 32px;
@@ -29,12 +29,12 @@
 @mixin section-header { // Section Header - Mobile
     h2 {
         font-family: 'Avenir';
-        font-size: 36px;
-        line-height: 68px;
-        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 600;
         @media (min-width: $bp-tablet) { // Section Header - DeskTop & Tablet
-            font-size: 24px;
-            line-height: 32px;
+            font-size: 2rem;
+            line-height: 68px;
         }
     }
 }
@@ -51,13 +51,15 @@
     }
 }
 @mixin body-copy { // Body Copy - Mobile
-    font-family: 'Avenir';
-    font-size: 14px;
-    line-height: 22px;
-    font-weight: 400;
-    @media (min-width: $bp-tablet) { // Body Copy - DeskTop & Tablet
-        font-size: 13px;
-        line-height: 18px;
+    p {
+        font-family: 'Avenir';
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 400;
+        @media (min-width: $bp-tablet) { // Body Copy - DeskTop & Tablet
+            font-size: 13px;
+            line-height: 18px;
+        }
     }
 }
 @mixin footer-copy { // Footer - Mobile
@@ -85,6 +87,15 @@
     background-color: $BandSite-Black;
     color: $White;
 }
+// Padding
+@mixin padding-left-right {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+@mixin padding-top-bottom {
+    padding-top: 24px;
+    padding-bottom: 16px;
+}
 // Logo
 @mixin BandSite-Logo {
     max-height: 20px;
@@ -111,4 +122,11 @@
         border-color: $White;
         @include white-active-link;    
     }
+}
+// Section Images
+@mixin section-image {
+    @media (min-width: $bp-desktop) {
+        max-width: 60%;
+    }
+    
 }
