@@ -276,6 +276,8 @@ header .navigation-bar__right .navigation-menu .navigation-menu--current a {
   padding-right: 16px;
   padding-top: 26px;
   padding-bottom: 16px;
+  font-family: "Avenir";
+  color: #FFFFFF;
   background-image: linear-gradient(rgba(50, 50, 50, 0.5019607843), rgba(50, 50, 50, 0.5019607843)), url("/assets/Images/hero-bio.jpg");
   width: auto;
   height: 30vh;
@@ -296,22 +298,20 @@ header .navigation-bar__right .navigation-menu .navigation-menu--current a {
     padding-bottom: 36px;
   }
 }
-.hero__left {
+.hero h1 {
   font-family: "Avenir";
-  color: #FFFFFF;
-  margin: 0;
-}
-.hero__left h1 {
-  font-family: "Avenir";
-  font-size: 1.8rem;
+  font-size: 2rem;
   line-height: 68px;
   font-weight: 600;
 }
 @media (min-width: 768px) {
-  .hero__left h1 {
+  .hero h1 {
     font-size: 4rem;
     line-height: 32px;
   }
+}
+.hero__left {
+  margin: 0;
 }
 
 .about {

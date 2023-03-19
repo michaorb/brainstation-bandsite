@@ -6,6 +6,8 @@
 .hero { // Hero
     @include padding-left-right;
     @include padding-top-bottom;
+    @include page-header;
+    @include primary-text-white;
     background-image: // Hero background image
         linear-gradient($BandSite-Black-Overlay, $BandSite-Black-Overlay),
         url("/assets/Images/hero-bio.jpg");
@@ -16,8 +18,6 @@
         display: flex;
         align-items: center;
     &__left { // Hero title
-        @include page-header;
-        @include primary-text-white;
         margin: 0;
     }
 }

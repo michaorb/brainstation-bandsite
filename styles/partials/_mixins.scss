@@ -17,7 +17,7 @@
 @mixin page-header { // Page Header - Mobile
     h1 {
         font-family: 'Avenir';
-        font-size: 1.8rem;
+        font-size: 2rem;
         line-height: 68px;
         font-weight: 600;
         @media (min-width: $bp-tablet) { // Page Header - DeskTop & Tablet
