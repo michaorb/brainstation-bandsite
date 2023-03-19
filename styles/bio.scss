@@ -1,18 +1,21 @@
-@use "partials/global" as *;
+//  Partials
+@use "partials/global" as *; // Global contains the navigation and footer
 @use "partials/variables" as *;
 @use "partials/mixins" as *;
 
 .hero { // Hero
     @include padding-left-right;
-    background-image: 
+    @include padding-top-bottom;
+    background-image: // Hero background image
         linear-gradient($BandSite-Black-Overlay, $BandSite-Black-Overlay),
         url("/assets/Images/hero-bio.jpg");
         width: auto;
-        height: 35vh;
+        height: 30vh;
         background-size: cover;
+        background-position: right;
         display: flex;
         align-items: center;
-    &__left { // hero title
+    &__left { // Hero title
         @include page-header;
         @include primary-text-white;
         margin: 0;
@@ -20,45 +23,106 @@
 }
 .about { // About 
     @include padding-left-right;
+    @include padding-top-bottom;
     @include section-header;
+    @include subheader;
     @include body-copy;
-    h2 {
-        @include primary-text-dark;
+    @include primary-text-dark;
+    h2 { // Section header
+        margin-top: 0;
     }
-    img { // Band Image - Mobile
+    img { // About image
         width: 100%;
         height: auto;
         background-size: cover;
-        @media (min-width: $bp-tablet) {
+        @media (min-width: $bp-tablet) { // Media query for tablet mode and higher
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+            object-position: center;
+        }
+        @include section-image; // About Image media query for desktop mode
+    }
+    &__container { // contains the image, quote, and subsection of the "About" section
+        @media (min-width: $bp-tablet) { // Media query for tablet mode and higher
             width: 80%;
+            margin-left: 10%;
         }
-        @include section-image;
-    }
-    &__image--center { // Band Image - Tablet & Desktop 
-        @media (min-width: $bp-tablet) {
-            display: flex;
-            justify-content: center;
+        @media (min-width: $bp-desktop) { // Media query for tablet mode and higher
+            width: 60%;
+            margin-left: 20%;
         }
     }
-    #teddy-quote { // Band Quote
+    #teddy-quote { // Band quote
         font-weight: 600;
+        font-size: 1.1rem;
         line-height: 25px;
+        display: block;
+        padding-bottom: 10px;
+        q {
+            display: block;
+            padding-bottom: 5px;
+            @media (min-width: $bp-tablet) { // Media query for tablet mode and higher
+                font-size: 1.4rem;
+                line-height: 30px;
+                padding-top: 20px;
+            }
+        }
+
     }
-    &__bio { // Bio Text
-        @include subheader;
-        @include primary-text-dark;
-        @include body-copy;
+    h3 { // About subheader
+        @media (min-width: $bp-tablet) { // Media query for tablet mode and higher
+            padding-top: 20px;
+        }
+    }
+    &__text { // About text
+        @media (min-width: $bp-tablet) { // Media query for tablet mode and higher
+            display: flex;
+            column-gap: 30px;
+            justify-content: space-around;
+            width: 100%;
+            margin: 0;
+        }
     }
 }
 .gallery { // Gallery
     @include padding-left-right;
-    h2 {
-        @include section-header;
-        @include primary-text-dark;
+    @include padding-top-bottom;
+    @include section-header;
+    @include primary-text-dark;
+    background-color: $Alabaster;
+    h2 { // Section header
+        margin-top: 0;
     }
-    img {
+    img { // Gallery Images
         width: 100%;
         height: auto;
         background-size: cover;
+        padding-bottom: 10px;
+        @media  (min-width: $bp-tablet) { // Media query for tablet mode and higher
+            width: 30%;
+            padding-bottom: 0;
+        }
+    }
+    &__col-1 { // First column (horizontal)
+        @media (min-width: $bp-tablet) { // Media query for tablet mode and higher
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 30px;
+        }
+    }
+    &__col-2 { // Second column (horizontal)
+        @media (min-width: $bp-tablet) { // Media query for tablet mode and higher
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 30px;
+        }
+    }
+    &__col-3 { // Third column (horizontal)
+        @media (min-width: $bp-tablet) { // Media query for tablet mode and higher
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 30px;
+        }
     }
 }

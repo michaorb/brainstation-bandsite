@@ -14,131 +14,119 @@
         Contains navigation bar, nesting two separate div classes to style the left and right sides -->
     <header>
         <nav class="navigation-bar">
-        <!-- ### The left side of navigation starts here ###
-            Contains class for site logo -->
-            <div class="navigation-bar__left">
-                <img class="site-logo"src="/assets/Logo/Logo-bandsite.svg">
+            <div class="navigation-bar__left"> <!--nav left side-->
+                <a href="/index.html"><img class="site-logo" src="/assets/Logo/Logo-bandsite.svg" alt=""></a> <!--logo-->
             </div>
-            <!-- ### The right side of navigation starts here ###
-                Contains class for menu and a list id to define which page the user is currently on-->
-            <div class="navigation-bar__right">
-                <ul class="navigation-menu">
+            <div class="navigation-bar__right"> <!--nav right side-->
+                <ul class="navigation-menu"> <!--nav menu-->
                     <li class="navigation-menu--current"><a href="#">Biography</a></li>
                     <li><a href="#">Shows</a></li>
                 </ul>
             </div>
         </nav>
-        <!-- Right side of navigation ends here -->
     </header>
     <!-- ### Main content of the site starts here ### -->
     <main>
-        <!-- ### Hero Section Starts Here ###
-            Contains class for left side of hero, nesting an h1 with an id for the hero text -->
+        <!-- ### Hero Section Starts Here ### -->
         <section class="hero">
-            <div class="hero__left">
+            <div class="hero__left"> <!-- hero left side-->
                 <h1>The Bees Knees</h1>
             </div>
         </section>
-        <!-- ### "About the Musicians" Section Starts Here
-            Contains article class for band bio section, nesting two separate column classes for the left and right side ### -->
+        <!-- ### "About the Musicians" Section Starts Here -->
         <section class="about">
-            <h2>About the Musicians</h2> <!--main header for about section -->
-            <div class="about__image--center">
+            <h2>About the Musicians</h2> <!--section header-->
+            <div class="about__container"> <!--contains the band image, quote, and bio text-->
                 <img src="/assets/Images/band.jpg" alt=""> <!--Image for "About" section -->
-            </div>
-            <!-- Band quote underneath image starts here -->
-            <p id="teddy-quote"><q>We push each other to be the best. It's not uncommon for one of us to say 'this needs to be better, back to the drawing board'</q>
-            <br>- Bryan Teddy, lead vocalist of The Bees Knees</p>
-            <!-- The band bio section starts here -->
-            <article class="about__bio">
-                <h3>The Bees Knees</h3> <!--band bio header -->
-                <col class="about__left"> <!--left column of bio text -->
+                <!-- Band quote underneath image starts here -->
+                <p id="teddy-quote"><q>We push each other to be the best. It's not uncommon for one of us to say 'this needs to be better, back to the drawing board'</q>
+                <br>- Bryan Teddy, lead vocalist of The Bees Knees</p>
+                <!-- The band bio section starts here -->
+                <h3>The Bees Knees</h3> <!--band bio subheader -->
+                <div class="about__text">
                     <p>The Bees Knees is a pop rock band originating from San Francisco, California. The band consists of lead vocalist Bryan Teddy, guitarist Mack Tolkens, guitarist Andrew Green, bassist Kent Zulkee and drummer Freddie Fischer. The band achieved its first commercial success as an unsigned act, drawing attention, from manager Cam Adams. Having worked with other popular acts (The Elephant in The Room, One Trick Pony, The Cat's Meow), Adams was confident the band could succeed even further, pushing them to sign with Magenta Records.</p>
-                </col>
-                <col class="about__right"> <!--right column of bio text -->
                     <p>From there, the band has soared, gaining international recognition and ranking in the top 10 on the Poster Charts. New fans immediately fell in love with the band's original and organic attitude, solidifying their place as one of the hottest and fastest up and coming acts of this century. Fans affectionately refer to themselves as "The Hive" and are drawn to their candid and authentic performances on stage. Looking forward to touring in the future, The Bees Knees are currently recording their second studio album, looking to be released in late 2021.</p>
-                </col>
-            </article>
+                </div>
+            </div>
         </section>
-        <!-- ### "Photo Gallery" Section Starts Here 
-            Contains separate column classes for the first, second, and third columns of the gallery ### -->
+        <!-- ### "Photo Gallery" Section Starts Here-->
         <section class="gallery">
             <h2>Photo Gallery</h2> <!--main header of photo gallery -->
-            <col class="gallery__col-1"> <!--column 1 of bio text -->
+            <div class="gallery__col-1"> <!--column 1 of bio text -->
                 <img src="/assets/Images/Photo-gallery-1.jpg" alt="">
                 <img src="/assets/Images/Photo-gallery-2.jpg" alt="">
                 <img src="/assets/Images/Photo-gallery-3.jpg" alt="">
-            </col>
-            <col class="gallery__col-2"> <!--column 2 of bio text -->
+            </div>
+            <div class="gallery__col-2"> <!--column 2 of bio text -->
                 <img src="/assets/Images/Photo-gallery-4.jpg" alt="">
                 <img src="/assets/Images/Photo-gallery-5.jpg" alt="">
                 <img src="/assets/Images/Photo-gallery-6.jpg" alt="">
-            </col>
-            <col class="gallery__col-3"> <!--column 1 of bio text -->
+            </div>
+            <div class="gallery__col-3"> <!--column 1 of bio text -->
                 <img src="/assets/Images/Photo-gallery-7.jpg" alt="">
                 <img src="/assets/Images/Photo-gallery-8.jpg" alt="">
                 <img src="/assets/Images/Photo-gallery-9.jpg" alt="">
-            </col>
+            </div>
         </section>
         <!-- ### Footer Stars Here ### -->
         <footer class="contact"> <!--contains entire footer section-->
-            <section class="contact__header"> <!--contains the main header includes the section heading, the social media icons, and site logo-->
-                <h2>Get in Touch</h2> <!--section heading -->
+            <div class="contact__header-container"> <!--contains the main header includes the section heading, the social media icons, and site logo-->
+                <h2>Get in Touch</h2> <!--section header -->
                 <div class="contact__header-icons"> <!--social media icons-->
                     <img src="/assets/Icons/SVG/Icon-instagram.svg" alt="instagram">
                     <img src="/assets/Icons/SVG/Icon-facebook.svg" alt="facebook">
                     <img src="/assets/Icons/SVG/Icon-twitter.svg" alt="twitter">
                 </div>
-            </section>
+            </div>
             <!-- Separate div containing 3 columns for 3 of the band's main contacts/agents/reps starts here -->
-            <section class="contact__contacts">
+            <div class="contact__contacts">
                 <div class="contact__contacts-column">
-                    <section class="contact__contacts-name"> <!--contains their name and where they work -->
-                        <p><b>Cam Adams</b></p>
-                        <p><b>The Bees Knees Management</b>
-                    </section>
-                    <section class="contact__contacts-location"> <!--contains their location info -->
-                        <br>503 Broadway Penthouse,
-                        <br>New York, NY 10012, USA
-                    </section>
-                    <section class="contact__contacts-email"> <!--contains their email -->
-                        <br>info@thebeesknees.com</p>
-                    </section>
+                    <div class="contact__contacts-name"> <!--contains their name and where they work -->
+                        <p>Cam Adams</p>
+                        <p>The Bees Knees Management</p>
+                    </div>
+                    <div class="contact__contacts-location"> <!--contains their location info -->
+                        <p>503 Broadway Penthouse,</p>
+                        <p>New York, NY 10012, USA</p>
+                    </div>
+                    <div class="contact__contacts-email"> <!--contains their email -->
+                        <a href="mailto:info@thebeesknees.com"><p>info@thebeesknees.com</p></a>
+                    </div>
                 </div>
                 <!--column 2, second contact -->
                 <div class="contact__contacts-column">
-                    <section class="contact__contacts-name"> <!--contains their name and where they work -->
-                        <p><b>Pearl Gregg</b></p>
-                        <p><b>Limitless Artist Group</b>
-                    </section>
-                    <section class="contact__contacts-location"> <!--contains their location info -->
-                        <br>Booking Agent for
-                        <br>US / South America / Japan
-                    </section>
-                    <section class="contact__contacts-email"> <!--contains their email -->
-                        <br>pearl.gregg@limitlessag.com</p>
-                    </section>
+                    <div class="contact__contacts-name"> <!--contains their name and where they work -->
+                        <p>Pearl Gregg</p>
+                        <p>Limitless Artist Group</p>
+                    </div>
+                    <div class="contact__contacts-location"> <!--contains their location info -->
+                        <p>Booking Agent for</p>
+                        <p>US / South America / Japan</p>
+                    </div>
+                    <div class="contact__contacts-email"> <!--contains their email -->
+                        <a href="mailto:pearl.gregg@limitlessag.com"><p>pearl.gregg@limitlessag.com</p></a>
+                    </div>
                 </div>
                 <!--column 3, third contact -->
                 <div class="contact__contacts-column">
-                    <section class="contact__contacts-name"> <!--contains their name and where they work -->
-                        <p><b>Carson Whyte</b></p>
-                        <p><b>ARCH Entertainment</b>
-                    </section>
-                    <section class="contact__contacts-location"> <!--contains their location info -->
-                        <br>Booking Agent for
-                        <br>UK / EU / AU
-                    </section>
-                    <section class="contact__contacts-email"> <!--contains their email -->
-                        <br>cwhyte@archentertainment.com</p>
-                    </section>
+                    <div class="contact__contacts-name"> <!--contains their name and where they work -->
+                       <p>Carson Whyte</p>
+                       <p>ARCH Entertainment</p>
+                    </div>
+                    <div class="contact__contacts-location"> <!--contains their location info -->
+                        <p>Booking Agent for</p>
+                        <p>UK / EU / AU</p>
+                    </div>
+                    <div class="contact__contacts-email"> <!--contains their email -->
+                        <a href="mailto:cwhyte@archentertainment.com"><p>cwhyte@archentertainment.com</p></a>
+                    </div>
                 </div>
-            </section>
-            <div class="contact__logo"> <!--site logo-->
-                <img class="site-logo" src="/assets/Logo/Logo-bandsite.svg">
+            </div>
+            <div class="contact__logo"> <!--footer site logo-->
+                <a href="/index.html"><img class="site-logo" src="/assets/Logo/Logo-bandsite.svg" alt=""></a>
             </div>
             <div class="contact__copyright">
-                <sup>Copyright The Bees Knees © 2021 All Rights Reserved</sup>
+                <sup>Copyright The Bees Knees © 2021 All Rights Reserved</sup> <!--footer copyright-->
             </div>
         </footer>
         <!-- ### Footer Ends Here ### -->

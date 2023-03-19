@@ -21,7 +21,7 @@
         line-height: 68px;
         font-weight: 600;
         @media (min-width: $bp-tablet) { // Page Header - DeskTop & Tablet
-            font-size: 24px;
+            font-size: 4rem;
             line-height: 32px;
         }
     }
@@ -29,11 +29,11 @@
 @mixin section-header { // Section Header - Mobile
     h2 {
         font-family: 'Avenir';
-        font-size: 24px;
+        font-size: 1.7rem;
         line-height: 32px;
         font-weight: 600;
         @media (min-width: $bp-tablet) { // Section Header - DeskTop & Tablet
-            font-size: 2rem;
+            font-size: 2.4rem;
             line-height: 68px;
         }
     }
@@ -41,12 +41,12 @@
 @mixin subheader { // Subheader - Mobile
     h3 {
         font-family: 'Avenir';
-        font-size: 24px;
-        line-height: 32px;
+        font-size: 1rem;
+        line-height: 1.375rem;
         font-weight: 600;
         @media (min-width: $bp-tablet) { // Subheader - DeskTop & Tablet
-            font-size: 14px;
-            line-height: 22px;
+            font-size: 1.8rem;
+            line-height: 2rem;
         }
     }
 }
@@ -67,18 +67,18 @@
     font-size: 14px;
     line-height: 20px;
     font-weight: 400;
-    @media (min-width: $bp-tablet) { // Footer - DeskTop & Tablet
-        font-size: 13px;
-        line-height: 18px;
-    }
+        @media (min-width: $bp-tablet) { // Footer - DeskTop & Tablet
+            font-size: 0.9rem;
+            line-height: 18px;
+        }
 }
 @mixin labels-button-text { // Labels and Buttons Text - Mobile
     font-family: 'Avenir';
-    font-size: 12px;
+    font-size: 0.625rem;
     line-height: 20px;
     font-weight: 700;
     @media (min-width: $bp-tablet) { // Labels and Buttons Text - DeskTop & Tablet
-        font-size: 10px;
+        font-size: 0.75rem;
         line-height: 20px;
     }
 }
@@ -91,10 +91,18 @@
 @mixin padding-left-right {
     padding-left: 16px;
     padding-right: 16px;
+    @media  (min-width: $bp-tablet) {
+        padding-left: 36px;
+        padding-right: 36px;
+    }
 }
 @mixin padding-top-bottom {
-    padding-top: 24px;
+    padding-top: 26px;
     padding-bottom: 16px;
+    @media  (min-width: $bp-tablet) {
+        padding-top: 48px;
+        padding-bottom: 36px;
+    }
 }
 // Logo
 @mixin BandSite-Logo {
@@ -124,9 +132,9 @@
     }
 }
 // Section Images
-@mixin section-image {
+@mixin section-image { // Media query for section images in desktop mode
     @media (min-width: $bp-desktop) {
-        max-width: 60%;
+        max-width: 100%;
     }
     
 }

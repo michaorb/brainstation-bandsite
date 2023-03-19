@@ -3,6 +3,10 @@
 
 body {
     margin: 0;
+    a {
+        color: inherit;
+        text-decoration: inherit;
+    }
 }
 header { // *** The Header / Navigation Bar
     @include light-on-dark;
@@ -12,7 +16,7 @@ header { // *** The Header / Navigation Bar
     height: auto;
     .navigation-bar { // navigation
         text-align: center;
-        @media (min-width: $bp-tablet) { // media query for entire nav bar
+        @media (min-width: $bp-tablet) { // Media query for tablet mode and higher
             display: flex;
             margin: 0;
             width: auto;
@@ -25,11 +29,11 @@ header { // *** The Header / Navigation Bar
         &__left .site-logo { // site logo
             padding-top: 5%;
             @include BandSite-Logo;
-            @media (min-width: $bp-tablet) { // media query for site-logo
+            @media (min-width: $bp-tablet) { // Media query for tablet mode and higher
                 padding-left: 5vw;
             }
         }
-        &__right .navigation-menu { // menu items
+        &__right .navigation-menu { // menu
             list-style-type: none;
             padding: 0;
             margin-bottom: 0;
@@ -37,15 +41,15 @@ header { // *** The Header / Navigation Bar
             display: flex;
             flex-direction: row;
             justify-content: space-around;
-            @media (min-width: $bp-tablet) { // media query for nav menu
+            @media (min-width: $bp-tablet) { // Media query for tablet mode and higher
                 gap: 5vw;
             }
-            li {
+            li { // menu links
                 width: 50%;
                 padding-bottom: 5%;
                 @include hover-state-link; // hover state link
 
-                @media (min-width: $bp-tablet) { // media query for li elements
+                @media (min-width: $bp-tablet) { // Media query for tablet mode and higher
                     width: auto;
                     padding-top: 20%;
                     padding-bottom: 20%;
@@ -68,29 +72,31 @@ header { // *** The Header / Navigation Bar
     flex-direction: column;
     width: auto;
     height: auto;
-    &__header { // section header
+    &__header-container { // section header container contains the subheader, social media icons (and site logo on tablet mmode or higher)
         display: flex;
         flex-direction: column;
         @include section-header;
-        h2 {
+        h2 { // subheader
             margin: 0;
             font-weight: 600; 
         }
-        .contact__header-icons { // section header - social media icons
-            margin-top: 5%;
-            margin-bottom: 5%;
+        .contact__header-icons { // social media icons
+            padding-top: 24px;
             display: flex;
             column-gap: 30px;
             img {
                 width: auto;
                 height: 20px;
             }
+            @media (min-width: $bp-tablet) { // social media icons media query for tablet mode and higher
+                padding: 0;
+            }
         }
-        @media (min-width: $bp-tablet) {
+        @media (min-width: $bp-tablet) { // section header container media query for tablet mode and higher
             display: flex;
             flex-direction: row;
             align-items: center;
-            column-gap: 20px;
+            column-gap: 40px;
         }
     }
     @media (min-width: $bp-tablet) { // media query for entire contact section
@@ -98,37 +104,42 @@ header { // *** The Header / Navigation Bar
         flex-direction: column;
         align-items: flex-start;
     }
-    &__contacts { //contacts list
+    &__contacts { // Contacts list (contains contacts column class)
         @include footer-copy;
         @include padding-top-bottom;
-        .contact__contacts-column {
-            @media (min-width: $bp-tablet) { // media query for contacts column
+        .contact__contacts-column { // Contacts column (contains name, location, and email classes
+            padding-bottom: 30px;
+            line-height: 10px;
+            @media (min-width: $bp-tablet) { // Media query for tablet mode and higher
                 display: flex;
                 flex-direction: column;
+                padding-bottom: 20px;
             }
         }
-        .contact__contacts-name {
-            line-height: 10px;
+        .contact__contacts-name { // Name and title
+            font-weight: 600;
+            padding-bottom: 5px;
         }
-        .contact__contacts-location {
-            display: inline;
+        .contact__contacts-location { // Location info
+            padding-bottom: 5px;
         }
-        .contact__contacts-email {
-            padding-bottom: 5%;
+        .contact__contacts-email { // Email
+            padding-bottom: 5px;
         }
-        @media (min-width: $bp-tablet) { // media query for contacts list
+        @media (min-width: $bp-tablet) { // Media query for contacts list in tablet mode or higher
             display: flex;
             flex-direction: row;
             align-items: center;
             column-gap: 60px;
+            padding-top: 24px;
+            padding-bottom: 24px;
         }
     }
     &__logo { // site logo
         margin: 0;
         padding-top: 0;
-        // padding-left: 5%;
         padding-bottom: 5%;
-        @media (min-width: $bp-tablet) {
+        @media (min-width: $bp-tablet) { // Media query for tablet mode and higher
             position: absolute;
             right: 0;
             padding-right: 5%;
@@ -136,6 +147,8 @@ header { // *** The Header / Navigation Bar
         }
     }
     &__copyright { // copyright
-        font-size: smaller;
+        @media (min-width: $bp-tablet) { // Media query for tablet mode and higher
+            padding-bottom: 10px;
+        }
     }
 }
