@@ -1,0 +1,21 @@
+//  Partials
+@use "../styles/partials/global" as *; // Global contains the navigation and footer
+@use "../styles/partials/variables" as *;
+@use "../styles/partials/mixins" as *;
+
+.hero-shows {
+    background-image: // Hero background image
+        linear-gradient($BandSite-Black-Overlay, $BandSite-Black-Overlay),
+        url("/assets/Images/Photo-gallery-3.jpg");
+    @include hero-section;
+    flex-direction: column;
+}
+.shows {
+    @include padding-left-right;
+    @include padding-top-bottom;
+    @include section-header;
+    @include subheader;
+    @include body-copy;
+    @include primary-text-dark;
+    @include cta-button;
+}
