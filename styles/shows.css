@@ -163,6 +163,7 @@ header .navigation-bar__right .navigation-menu .navigation-menu--current a {
   .contact__header-container h2 {
     font-size: 2.4rem;
     line-height: 68px;
+    margin: 0;
   }
 }
 .contact__header-container h2 {
@@ -272,14 +273,73 @@ header .navigation-bar__right .navigation-menu .navigation-menu--current a {
 }
 
 .hero-shows {
-  background-image: linear-gradient(rgba(50, 50, 50, 0.5019607843), rgba(50, 50, 50, 0.5019607843)), url("/assets/Images/Photo-gallery-3.jpg");
+  background-image: linear-gradient(rgba(50, 50, 50, 0.5019607843), rgba(50, 50, 50, 0.5019607843)), url("/assets/Images/hero-shows.jpg");
   width: auto;
   height: 30vh;
   background-size: cover;
   background-position: right;
   display: flex;
   align-items: center;
+  font-family: "Avenir";
+  color: #FFFFFF;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 26px;
+  padding-bottom: 16px;
+  background-position: left;
   flex-direction: column;
+  align-items: initial;
+  height: auto;
+}
+.hero-shows h1 {
+  font-family: "Avenir";
+  font-size: 2.2rem;
+  line-height: 40px;
+  font-weight: 600;
+}
+@media (min-width: 768px) {
+  .hero-shows h1 {
+    font-size: 4rem;
+    line-height: 70px;
+    margin-top: 40px;
+  }
+}
+.hero-shows h3 {
+  font-family: "Avenir";
+  font-size: 1rem;
+  line-height: 1.375rem;
+  font-weight: 600;
+}
+@media (min-width: 768px) {
+  .hero-shows h3 {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  .hero-shows {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+}
+@media (min-width: 768px) {
+  .hero-shows {
+    padding-top: 48px;
+    padding-bottom: 36px;
+  }
+}
+@media (min-width: 768px) {
+  .hero-shows__header {
+    width: 80%;
+  }
+}
+.hero-shows h3 {
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  .hero-shows iframe {
+    width: 70%;
+  }
 }
 
 .shows {
@@ -312,17 +372,20 @@ header .navigation-bar__right .navigation-menu .navigation-menu--current a {
   .shows h2 {
     font-size: 2.4rem;
     line-height: 68px;
+    margin: 0;
   }
 }
-.shows h3 {
+.shows h4, .shows h5 {
   font-family: "Avenir";
-  font-size: 1rem;
+  color: #AFAFAF;
+  font-size: 0.8rem;
   line-height: 1.375rem;
-  font-weight: 600;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 @media (min-width: 768px) {
-  .shows h3 {
-    font-size: 1.8rem;
+  .shows h4, .shows h5 {
+    font-size: 0.9rem;
     line-height: 2rem;
   }
 }
@@ -340,9 +403,10 @@ header .navigation-bar__right .navigation-menu .navigation-menu--current a {
 }
 .shows button {
   background-color: #323232;
-  color: #FFFFFF;
   font-family: "Avenir";
   color: #FFFFFF;
+  font-weight: 500;
+  text-transform: uppercase;
   width: 100%;
   height: 40px;
   padding-left: 32px;
@@ -359,4 +423,48 @@ header .navigation-bar__right .navigation-menu .navigation-menu--current a {
   .shows button {
     width: 150px;
   }
+}
+@media (min-width: 1280px) {
+  .shows {
+    display: flex;
+  }
+}
+@media (min-width: 768px) {
+  .shows__container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.shows__container-bp {
+  display: none;
+}
+@media (min-width: 768px) {
+  .shows__container-bp {
+    display: flex;
+    justify-content: space-between;
+  }
+  .shows__container-bp button {
+    visibility: hidden;
+  }
+  .shows__container-bp h5 {
+    width: 120px;
+  }
+}
+@media (min-width: 768px) {
+  .shows h4 {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .shows p {
+    width: 120px;
+  }
+}
+.shows #show-date {
+  font-weight: 600;
+}
+.shows hr {
+  margin-top: 20px;
+  color: #E1E1E1;
+  border-top: 1px;
 }/*# sourceMappingURL=shows.css.map */
