@@ -22,7 +22,7 @@
         font-weight: 600;
         @media (min-width: $bp-tablet) { // Page Header - DeskTop & Tablet
             font-size: 4rem;
-            line-height: 70px;
+            line-height: 75px;
             margin-top: 40px;
         }
     }
@@ -111,6 +111,10 @@
         padding-left: 36px;
         padding-right: 36px;
     }
+    @media  (min-width: $bp-tablet) {
+        padding-left: 15vw;
+        padding-right: 15vw;
+    }    
 }
 @mixin padding-top-bottom {
     padding-top: 26px;
@@ -124,6 +128,10 @@
 @mixin BandSite-Logo {
     max-height: 20px;
     max-width: 120px;
+    padding-top: 5%;
+    @media (min-width: $bp-tablet) {
+        padding-top: 0;
+    }
 }
 // Links
 @mixin silver-inactive-link { //Inactive State
@@ -162,6 +170,12 @@
     background-position: right;
     display: flex;
     align-items: center;
+    @media (min-width: $bp-desktop) {
+        height: 70vh;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 // Call to Action Buttons
 @mixin cta-button {

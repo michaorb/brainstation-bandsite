@@ -57,21 +57,29 @@ header .navigation-bar {
   header .navigation-bar {
     display: flex;
     margin: 0;
+    padding-top: 36px;
+    padding-left: 36px;
+    padding-right: 36px;
     width: auto;
     height: auto;
     flex-direction: row;
-    align-items: center;
     gap: 5%;
   }
 }
+@media (min-width: 1280px) {
+  header .navigation-bar {
+    padding-left: 15vw;
+    padding-right: 15vw;
+  }
+}
 header .navigation-bar__left .site-logo {
-  padding-top: 5%;
   max-height: 20px;
   max-width: 120px;
+  padding-top: 5%;
 }
 @media (min-width: 768px) {
   header .navigation-bar__left .site-logo {
-    padding-left: 5vw;
+    padding-top: 0;
   }
 }
 header .navigation-bar__right .navigation-menu {
@@ -90,11 +98,12 @@ header .navigation-bar__right .navigation-menu a {
 @media (min-width: 768px) {
   header .navigation-bar__right .navigation-menu {
     gap: 5vw;
+    margin-top: 0;
   }
 }
 header .navigation-bar__right .navigation-menu li {
   width: 50%;
-  padding-bottom: 5%;
+  padding-bottom: 36px;
 }
 header .navigation-bar__right .navigation-menu li:hover {
   text-decoration: none;
@@ -105,13 +114,6 @@ header .navigation-bar__right .navigation-menu li:hover a {
   text-decoration: none;
   font-family: "Avenir";
   color: #FFFFFF;
-}
-@media (min-width: 768px) {
-  header .navigation-bar__right .navigation-menu li {
-    width: auto;
-    padding-top: 20%;
-    padding-bottom: 20%;
-  }
 }
 header .navigation-bar__right .navigation-menu .navigation-menu--current {
   border-bottom: 5px solid;
@@ -141,6 +143,12 @@ header .navigation-bar__right .navigation-menu .navigation-menu--current a {
   .contact {
     padding-left: 36px;
     padding-right: 36px;
+  }
+}
+@media (min-width: 768px) {
+  .contact {
+    padding-left: 15vw;
+    padding-right: 15vw;
   }
 }
 @media (min-width: 768px) {
@@ -295,6 +303,12 @@ header .navigation-bar__right .navigation-menu .navigation-menu--current a {
 }
 @media (min-width: 768px) {
   .hero {
+    padding-left: 15vw;
+    padding-right: 15vw;
+  }
+}
+@media (min-width: 768px) {
+  .hero {
     padding-top: 48px;
     padding-bottom: 36px;
   }
@@ -308,7 +322,7 @@ header .navigation-bar__right .navigation-menu .navigation-menu--current a {
 @media (min-width: 768px) {
   .hero h1 {
     font-size: 4rem;
-    line-height: 70px;
+    line-height: 75px;
     margin-top: 40px;
   }
 }
@@ -328,6 +342,12 @@ header .navigation-bar__right .navigation-menu .navigation-menu--current a {
   .about {
     padding-left: 36px;
     padding-right: 36px;
+  }
+}
+@media (min-width: 768px) {
+  .about {
+    padding-left: 15vw;
+    padding-right: 15vw;
   }
 }
 @media (min-width: 768px) {
@@ -455,6 +475,12 @@ header .navigation-bar__right .navigation-menu .navigation-menu--current a {
   .gallery {
     padding-left: 36px;
     padding-right: 36px;
+  }
+}
+@media (min-width: 768px) {
+  .gallery {
+    padding-left: 15vw;
+    padding-right: 15vw;
   }
 }
 @media (min-width: 768px) {
