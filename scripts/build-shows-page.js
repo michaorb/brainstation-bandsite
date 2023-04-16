@@ -31,6 +31,17 @@ let showsArray = [
     }
 ];
 
+function clickEvent(event) {
+    const currentActive = document.querySelector(".shows__container--active");
+    //remove the current active class if it exists
+    if (currentActive) {
+        currentActive.classList.remove("shows__container--active");
+    }
+    // give the clicked div the "active" class
+    const target = event.target.closest(".shows__container");
+    target.classList.add("shows__container--active");
+}
+
 function createShowHtml(show) {
     let container = document.createElement("div");
     container.classList.add("shows__container");
@@ -60,6 +71,8 @@ function createShowHtml(show) {
     container.appendChild(locationHeader);
     container.appendChild(location);
     container.appendChild(button);
+
+    container.addEventListener("click", clickEvent);
 
     return container;
 }

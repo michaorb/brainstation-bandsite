@@ -493,6 +493,12 @@ header .navigation-bar__right .navigation-menu .navigation-menu--current a {
     justify-content: space-between;
   }
 }
+.shows__container:hover {
+  background-color: #FAFAFA;
+}
+.shows__container--active.shows__container {
+  background-color: #E1E1E1;
+}
 .shows__container-bp {
   display: none;
 }

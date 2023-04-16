@@ -69,6 +69,12 @@
             display: flex;
             justify-content: space-between;
         }
+        &:hover {
+            background-color: $Alabaster;
+        }
+        &--active.shows__container {
+            background-color: $Mercury;
+        }
     }
     &__container-bp {
         display: none;
