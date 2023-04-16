@@ -288,6 +288,12 @@ header .navigation-bar__right .navigation-menu .navigation-menu--current a {
   padding-bottom: 16px;
   font-family: "Avenir";
   color: #FFFFFF;
+  width: auto;
+  height: 30vh;
+  background-size: cover;
+  background-position: right;
+  display: flex;
+  align-items: center;
   background-image: linear-gradient(rgba(50, 50, 50, 0.5019607843), rgba(50, 50, 50, 0.5019607843)), url("/assets/Images/hero-bio.jpg");
   width: auto;
   height: 30vh;
@@ -325,6 +331,14 @@ header .navigation-bar__right .navigation-menu .navigation-menu--current a {
     font-size: 4rem;
     line-height: 75px;
     margin-top: 40px;
+  }
+}
+@media (min-width: 1280px) {
+  .hero {
+    height: 70vh;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 .hero__left {
@@ -517,21 +531,7 @@ header .navigation-bar__right .navigation-menu .navigation-menu--current a {
   }
 }
 @media (min-width: 768px) {
-  .gallery__col-1 {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 30px;
-  }
-}
-@media (min-width: 768px) {
-  .gallery__col-2 {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 30px;
-  }
-}
-@media (min-width: 768px) {
-  .gallery__col-3 {
+  .gallery__col-1, .gallery__col-2, .gallery__col-3 {
     display: flex;
     justify-content: space-between;
     padding-bottom: 30px;
@@ -609,9 +609,9 @@ header .navigation-bar__right .navigation-menu .navigation-menu--current a {
   width: 36px;
   height: 36px;
   border-radius: 50%;
+  background-color: #E1E1E1;
   -o-object-fit: cover;
      object-fit: cover;
-  background-color: #E1E1E1;
   margin-top: 30px;
 }
 .comments__container {
@@ -676,9 +676,6 @@ header .navigation-bar__right .navigation-menu .navigation-menu--current a {
     width: 150px;
   }
 }
-.comments form label {
-  padding: 4px;
-}
 .comments form input[type=text], .comments form textarea {
   font-family: "Avenir";
   color: #323232;
@@ -711,14 +708,22 @@ header .navigation-bar__right .navigation-menu .navigation-menu--current a {
 .comments form input::placeholder {
   color: #323232;
 }
+.comments form label {
+  padding: 4px;
+}
 .comments form input[type=submit] {
   align-self: flex-end;
 }
 .comments__render__display {
   display: flex;
+  gap: 5vw;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 5vw;
+}
+@media (min-width: 768px) {
+  .comments__render__display {
+    gap: 0;
+  }
 }
 .comments__render__display h6 {
   font-family: "Avenir";
@@ -733,14 +738,9 @@ header .navigation-bar__right .navigation-menu .navigation-menu--current a {
     line-height: 18px;
   }
 }
-@media (min-width: 768px) {
-  .comments__render__display {
-    gap: 0;
-  }
-}
 .comments__render__display__profile {
-  height: 35px;
   width: 36px;
+  height: 36px;
   border-radius: 50%;
   background-color: #E1E1E1;
 }
