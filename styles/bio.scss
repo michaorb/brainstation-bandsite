@@ -133,6 +133,7 @@
     @include subheader;
     @include body-copy;
     @include primary-text-dark;
+    @include divider;
     &__profile {
         width: 36px;
         height: 36px;
@@ -195,8 +196,12 @@
             flex-wrap: wrap;
             align-items: flex-start;
             justify-content: space-between;
+            h6 {
+                font-weight: 600;
+            }
             &__timestamp {
                 margin: 0;
+                color: $Silver;
             }
             &__comment {
                 flex: 0 0 100%;

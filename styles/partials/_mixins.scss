@@ -215,3 +215,11 @@
         }
     }
 }
+// Divider
+@mixin divider {
+    hr {
+        margin-top: 20px;
+        color: $Mercury;
+        border-top: 1px;
+    }
+}

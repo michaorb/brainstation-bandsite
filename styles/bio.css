@@ -604,6 +604,11 @@ header .navigation-bar__right .navigation-menu .navigation-menu--current a {
     line-height: 18px;
   }
 }
+.comments hr {
+  margin-top: 20px;
+  color: #E1E1E1;
+  border-top: 1px;
+}
 .comments__profile {
   width: 36px;
   height: 36px;
@@ -719,8 +724,12 @@ header .navigation-bar__right .navigation-menu .navigation-menu--current a {
   align-items: flex-start;
   justify-content: space-between;
 }
+.comments__render__display__text h6 {
+  font-weight: 600;
+}
 .comments__render__display__text__timestamp {
   margin: 0;
+  color: #AFAFAF;
 }
 .comments__render__display__text__comment {
   flex: 0 0 100%;
