@@ -28,6 +28,7 @@ function formSubmit (event) {
         comment: formFields.comment.value,
         timestamp: new Date().toLocaleDateString("en-US")
     };
+
     commentArray.unshift (comment);
     renderComments ();
     event.target.reset();

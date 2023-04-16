@@ -171,7 +171,6 @@ header .navigation-bar__right .navigation-menu .navigation-menu--current a {
   .contact__header-container h2 {
     font-size: 2.4rem;
     line-height: 68px;
-    margin: 0;
   }
 }
 .contact__header-container h2 {
@@ -368,7 +367,6 @@ header .navigation-bar__right .navigation-menu .navigation-menu--current a {
   .about h2 {
     font-size: 2.4rem;
     line-height: 68px;
-    margin: 0;
   }
 }
 .about h3 {
@@ -501,7 +499,6 @@ header .navigation-bar__right .navigation-menu .navigation-menu--current a {
   .gallery h2 {
     font-size: 2.4rem;
     line-height: 68px;
-    margin: 0;
   }
 }
 .gallery h2 {
@@ -577,7 +574,6 @@ header .navigation-bar__right .navigation-menu .navigation-menu--current a {
   .comments h2 {
     font-size: 2.4rem;
     line-height: 68px;
-    margin: 0;
   }
 }
 .comments h3 {
@@ -616,10 +612,29 @@ header .navigation-bar__right .navigation-menu .navigation-menu--current a {
   -o-object-fit: cover;
      object-fit: cover;
   background-color: #E1E1E1;
+  margin-top: 30px;
 }
 .comments__container {
   display: flex;
   gap: 5vw;
+  justify-content: space-between;
+}
+@media (min-width: 768px) {
+  .comments__container {
+    gap: 0;
+  }
+}
+@media (min-width: 768px) {
+  .comments__container, .comments__render {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+@media (min-width: 1280px) {
+  .comments__container, .comments__render {
+    width: 60%;
+    margin-left: 20%;
+  }
 }
 .comments form {
   font-family: "Avenir";
@@ -630,7 +645,7 @@ header .navigation-bar__right .navigation-menu .navigation-menu--current a {
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
+  width: 90%;
 }
 @media (min-width: 768px) {
   .comments form {
@@ -675,7 +690,6 @@ header .navigation-bar__right .navigation-menu .navigation-menu--current a {
 }
 @media (min-width: 768px) {
   .comments form input[type=text], .comments form textarea {
-    height: 48px;
     padding: 16px;
   }
 }
@@ -683,7 +697,11 @@ header .navigation-bar__right .navigation-menu .navigation-menu--current a {
   border-color: #323232;
   outline: none;
 }
-.comments form input[type=text]:invalid, .comments form textarea:invalid {
+.comments form input[type=text]:not(:-moz-placeholder-shown):invalid, .comments form textarea:not(:-moz-placeholder-shown):invalid {
+  border-color: #D22D2D;
+  outline: none;
+}
+.comments form input[type=text]:not(:placeholder-shown):invalid, .comments form textarea:not(:placeholder-shown):invalid {
   border-color: #D22D2D;
   outline: none;
 }
@@ -693,10 +711,14 @@ header .navigation-bar__right .navigation-menu .navigation-menu--current a {
 .comments form input::placeholder {
   color: #323232;
 }
+.comments form input[type=submit] {
+  align-self: flex-end;
+}
 .comments__render__display {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  gap: 5vw;
 }
 .comments__render__display h6 {
   font-family: "Avenir";
@@ -711,6 +733,11 @@ header .navigation-bar__right .navigation-menu .navigation-menu--current a {
     line-height: 18px;
   }
 }
+@media (min-width: 768px) {
+  .comments__render__display {
+    gap: 0;
+  }
+}
 .comments__render__display__profile {
   height: 35px;
   width: 36px;
@@ -718,7 +745,7 @@ header .navigation-bar__right .navigation-menu .navigation-menu--current a {
   background-color: #E1E1E1;
 }
 .comments__render__display__text {
-  width: 75vw;
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;

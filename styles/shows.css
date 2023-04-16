@@ -171,7 +171,6 @@ header .navigation-bar__right .navigation-menu .navigation-menu--current a {
   .contact__header-container h2 {
     font-size: 2.4rem;
     line-height: 68px;
-    margin: 0;
   }
 }
 .contact__header-container h2 {
@@ -424,7 +423,6 @@ header .navigation-bar__right .navigation-menu .navigation-menu--current a {
   .shows h2 {
     font-size: 2.4rem;
     line-height: 68px;
-    margin: 0;
   }
 }
 .shows h4, .shows h5 {
