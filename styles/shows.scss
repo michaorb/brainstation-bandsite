@@ -57,7 +57,7 @@
     @include cta-button;
     @media (min-width: $bp-desktop) {
         display: flex;
-        gap: 80px;
+        gap: 100px;
     }
     &__wrapper {
         @media (min-width: $bp-desktop) {

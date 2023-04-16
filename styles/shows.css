@@ -145,7 +145,7 @@ header .navigation-bar__right .navigation-menu .navigation-menu--current a {
     padding-right: 36px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1280px) {
   .contact {
     padding-left: 15vw;
     padding-right: 15vw;
@@ -243,6 +243,8 @@ header .navigation-bar__right .navigation-menu .navigation-menu--current a {
 .contact__contacts .contact__contacts-name {
   font-weight: 600;
   padding-bottom: 5px;
+  width: -moz-max-content;
+  width: max-content;
 }
 .contact__contacts .contact__contacts-location {
   padding-bottom: 5px;
@@ -338,7 +340,7 @@ header .navigation-bar__right .navigation-menu .navigation-menu--current a {
     padding-right: 36px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1280px) {
   .hero-shows {
     padding-left: 15vw;
     padding-right: 15vw;
@@ -400,7 +402,7 @@ header .navigation-bar__right .navigation-menu .navigation-menu--current a {
     padding-right: 36px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1280px) {
   .shows {
     padding-left: 15vw;
     padding-right: 15vw;
@@ -477,7 +479,7 @@ header .navigation-bar__right .navigation-menu .navigation-menu--current a {
 @media (min-width: 1280px) {
   .shows {
     display: flex;
-    gap: 80px;
+    gap: 100px;
   }
 }
 @media (min-width: 1280px) {

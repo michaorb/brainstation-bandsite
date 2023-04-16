@@ -115,6 +115,7 @@ header { // *** The Header / Navigation Bar
         .contact__contacts-name { // Name and title
             font-weight: 600;
             padding-bottom: 5px;
+            width: max-content;
         }
         .contact__contacts-location { // Location info
             padding-bottom: 5px;
