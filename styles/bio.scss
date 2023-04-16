@@ -8,6 +8,7 @@
     @include padding-top-bottom;
     @include page-header;
     @include primary-text-white;
+    @include hero-section;
     background-image: // Hero background image
         linear-gradient($BandSite-Black-Overlay, $BandSite-Black-Overlay),
         url("/assets/Images/hero-bio.jpg");
@@ -44,14 +45,7 @@
         @include section-image; // About Image media query for desktop mode
     }
     &__container { // contains the image, quote, and subsection of the "About" section
-        @media (min-width: $bp-tablet) { // Media query for tablet mode and higher
-            width: 80%;
-            margin-left: 10%;
-        }
-        @media (min-width: $bp-desktop) { // Media query for tablet mode and higher
-            width: 60%;
-            margin-left: 20%;
-        }
+        @include narrow-on-large-screens;
     }
     #teddy-quote { // Band quote
         font-weight: 600;
@@ -104,25 +98,66 @@
             padding-bottom: 0;
         }
     }
-    &__col-1 { // First column (horizontal)
-        @media (min-width: $bp-tablet) { // Media query for tablet mode and higher
-            display: flex;
-            justify-content: space-between;
-            padding-bottom: 30px;
+    &__col-1, &__col-2, &__col-3 { // First column (horizontal)
+        @include gallery-col;
+    }
+}
+.comments {
+    @include padding-left-right;
+    @include padding-top-bottom;
+    @include section-header;
+    @include subheader;
+    @include body-copy;
+    @include primary-text-dark;
+    @include divider;
+    &__profile {
+        @include profile-pic-sizing;
+        object-fit: cover;
+        margin-top: 30px;
+    }
+    &__container {
+        @include profile-block-spacing;
+    }
+    &__container, &__render {
+        @include narrow-on-large-screens;
+    }
+    form {
+        @include labels-button-text;
+        @include cta-button;
+        @include form-text-input;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        label {
+            padding: 4px;
+        }
+        input[type="submit"] {
+            align-self: flex-end;
         }
     }
-    &__col-2 { // Second column (horizontal)
-        @media (min-width: $bp-tablet) { // Media query for tablet mode and higher
-            display: flex;
-            justify-content: space-between;
-            padding-bottom: 30px;
+    &__render__display {
+        @include profile-block-spacing;
+        align-items: flex-start;
+        @include comment-text;
+        &__profile {
+            @include profile-pic-sizing;
         }
-    }
-    &__col-3 { // Third column (horizontal)
-        @media (min-width: $bp-tablet) { // Media query for tablet mode and higher
+        &__text {
+            width: 90%;
             display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
             justify-content: space-between;
-            padding-bottom: 30px;
+            h6 {
+                font-weight: 600;
+            }
+            &__timestamp {
+                margin: 0;
+                color: $Silver;
+            }
+            &__comment {
+                flex: 0 0 100%;
+            }
         }
     }
 }

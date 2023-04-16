@@ -20,7 +20,7 @@
             <div class="navigation-bar__right"> <!--nav right side-->
                 <ul class="navigation-menu"> <!--nav menu-->
                     <li class="navigation-menu--current"><a href="#">Biography</a></li>
-                    <li><a href="#">Shows</a></li>
+                    <li><a href="/pages/shows.html">Shows</a></li>
                 </ul>
             </div>
         </nav>
@@ -66,6 +66,52 @@
                 <img src="/assets/Images/Photo-gallery-7.jpg" alt="">
                 <img src="/assets/Images/Photo-gallery-8.jpg" alt="">
                 <img src="/assets/Images/Photo-gallery-9.jpg" alt="">
+            </div>
+        </section>
+        <section class="comments">
+            <h2>Join the Conversation</h2>
+            <div class="comments__container">
+                <img class="comments__profile" src="/assets/Images/Mohan-muruge.jpg" alt="profile">
+                <form id="comment-form">
+                    <label for="comments__name">Name</label>
+                    <input required id="comments__name" type="text" name="name" placeholder="Enter your name">
+                    <label for="comments__comment">Comment</label>
+                    <textarea required rows="4" id="comments__comment" name="comment" placeholder="Add a comment"></textarea>
+                    <input type="submit" value="Comment">
+                </form>
+            </div>
+            <hr>
+            <div class="comments__render">
+                <div class="comments__render__display">
+                    <div class="comments__render__display__profile">
+                    </div>
+                    <div class="comments__render__display__text">
+                        <h6>Connor Walton</h6>
+                        <p class="comments__render__display__text__timestamp"><time datetime="2021-02-17">02/17/2021</time></p>
+                        <p class="comments__render__display__text__comment">This is art. This is inexplicable magic expressed in the purest way, everything that makes up this majestic work deserves reverence. Let us appreciate this for what it is and what it contains.</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="comments__render__display">
+                    <div class="comments__render__display__profile">
+                    </div>
+                    <div class="comments__render__display__text">
+                        <h6>Emilie Beach</h6>
+                        <p class="comments__render__display__text__timestamp"><time datetime="2021-01-09">01/09/2021</time></p>
+                        <p class="comments__render__display__text__comment">I feel blessed to have seen them in person. What a show! They were just perfection. If there was one day of my life I could relive, this would be it. What an incredible day.</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="comments__render__display">
+                    <div class="comments__render__display__profile">
+                    </div>
+                    <div class="comments__render__display__text">
+                        <h6>Miles Acosta</h6>
+                        <p class="comments__render__display__text__timestamp"><time datetime="2020-12-20">12/20/2020</time></p>
+                        <p>I can't stop listening. Every time I hear one of their songs - the vocals - it gives me goosebumps. Shivers straight down my spine. What a beautiful expression of creativity. Can't get enough.</p>
+                    </div>
+                </div>
+                <hr>
             </div>
         </section>
     </main>
@@ -131,5 +177,6 @@
         </div>
     </footer>
     <!-- ### Footer Ends Here ### -->
+    <script src="/scripts/index-page.js"></script>
 </body>
 </html>
