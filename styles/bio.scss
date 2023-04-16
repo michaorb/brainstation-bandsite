@@ -126,3 +126,81 @@
         }
     }
 }
+.comments {
+    @include padding-left-right;
+    @include padding-top-bottom;
+    @include section-header;
+    @include subheader;
+    @include body-copy;
+    @include primary-text-dark;
+    &__profile {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        object-fit: cover;
+        background-color: $Mercury;
+    }
+    &__container {
+        display: flex;
+        gap: 5vw;
+    }
+    form {
+        @include labels-button-text;
+        @include cta-button;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        label {
+            padding: 4px;
+        }
+        input[type="text"], textarea {
+            font-family: "Avenir";
+            color: $BandSite-Black;
+            border: 1px solid;
+            border-color: $Mercury;
+            border-radius: 4px;
+            padding: 12px;
+            margin-bottom: 12px;
+            @media (min-width: $bp-tablet) {
+                height: 48px;
+                padding: 16px;
+            }
+            &:focus {
+                border-color: $BandSite-Black;
+                outline: none;
+            }
+            &:invalid {
+                border-color: $Form-Error-Border;
+                outline: none;
+            }
+        }
+        input::placeholder {
+            color: $BandSite-Black;
+        }
+    }
+    &__render__display {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        @include comment-text;
+        &__profile {
+            height: 35px;
+            width: 36px;
+            border-radius: 50%;
+            background-color: $Mercury;
+        }
+        &__text {
+            width: 75vw;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: space-between;
+            &__timestamp {
+                margin: 0;
+            }
+            &__comment {
+                flex: 0 0 100%;
+            }
+        }
+    }
+}

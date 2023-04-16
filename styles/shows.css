@@ -453,7 +453,7 @@ header .navigation-bar__right .navigation-menu .navigation-menu--current a {
     line-height: 18px;
   }
 }
-.shows button {
+.shows button, .shows input[type=submit] {
   background-color: #323232;
   font-family: "Avenir";
   color: #FFFFFF;
@@ -467,12 +467,12 @@ header .navigation-bar__right .navigation-menu .navigation-menu--current a {
   text-decoration: none;
   border-radius: 4px;
 }
-.shows button:hover {
+.shows button:hover, .shows input[type=submit]:hover {
   background-color: #000000;
   color: #FFFFFF;
 }
 @media (min-width: 768px) {
-  .shows button {
+  .shows button, .shows input[type=submit] {
     width: 150px;
   }
 }

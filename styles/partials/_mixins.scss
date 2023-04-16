@@ -90,12 +90,27 @@
 }
 @mixin labels-button-text { // Labels and Buttons Text - Mobile
     font-family: 'Avenir';
+    color: $Silver;
     font-size: 0.625rem;
     line-height: 20px;
-    font-weight: 700;
+    font-weight: 600;
+    text-transform: uppercase;
     @media (min-width: $bp-tablet) { // Labels and Buttons Text - DeskTop & Tablet
         font-size: 0.75rem;
         line-height: 20px;
+    }
+}
+@mixin comment-text {
+    h6 {
+        font-family: 'Avenir';
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 400;
+        margin: 0;
+        @media (min-width: $bp-tablet) { //Comment Text - DeskTop & Tablet
+            font-size: 13px;
+            line-height: 18px;
+        }
     }
 }
 // Header / Footer Light on Dark Background Styles
@@ -179,7 +194,7 @@
 }
 // Call to Action Buttons
 @mixin cta-button {
-    button {
+    button, input[type="submit"] {
         background-color: $BandSite-Black;
         @include primary-text-white;
         font-weight: 500;
