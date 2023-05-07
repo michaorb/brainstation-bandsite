@@ -36,6 +36,7 @@
 }
 body {
   margin: 0;
+  font-family: "Avenir", "Montserrat";
 }
 body a {
   color: inherit;
@@ -93,7 +94,7 @@ header {
 }
 .navigation__menu a {
   text-decoration: none;
-  font-family: "Avenir";
+  font-family: "Avenir", "Montserrat";
   color: #E1E1E1;
 }
 @media (min-width: 768px) {
@@ -113,7 +114,7 @@ header {
 }
 .navigation__menu li:hover a {
   text-decoration: none;
-  font-family: "Avenir";
+  font-family: "Avenir", "Montserrat";
   color: #FFFFFF;
 }
 .navigation__menu--current {
@@ -122,14 +123,14 @@ header {
 }
 .navigation__menu--current a {
   text-decoration: none;
-  font-family: "Avenir";
+  font-family: "Avenir", "Montserrat";
   color: #FFFFFF;
 }
 
 .contact {
   background-color: #323232;
   color: #FFFFFF;
-  font-family: "Avenir";
+  font-family: "Avenir", "Montserrat";
   color: #FFFFFF;
   padding-left: 16px;
   padding-right: 16px;
@@ -163,7 +164,7 @@ header {
   flex-direction: column;
 }
 .contact__header h2 {
-  font-family: "Avenir";
+  font-family: "Avenir", "Montserrat";
   font-size: 1.7rem;
   line-height: 32px;
   font-weight: 600;
@@ -210,7 +211,7 @@ header {
   }
 }
 .contact__contacts {
-  font-family: "Avenir";
+  font-family: "Avenir", "Montserrat";
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
@@ -287,7 +288,7 @@ header {
   padding-right: 16px;
   padding-top: 26px;
   padding-bottom: 16px;
-  font-family: "Avenir";
+  font-family: "Avenir", "Montserrat";
   color: #FFFFFF;
   width: auto;
   height: 30vh;
@@ -322,7 +323,7 @@ header {
   }
 }
 .hero h1 {
-  font-family: "Avenir";
+  font-family: "Avenir", "Montserrat";
   font-size: 2.2rem;
   line-height: 40px;
   font-weight: 600;
@@ -351,7 +352,7 @@ header {
   padding-right: 16px;
   padding-top: 26px;
   padding-bottom: 16px;
-  font-family: "Avenir";
+  font-family: "Avenir", "Montserrat";
   color: #323232;
 }
 @media (min-width: 768px) {
@@ -373,7 +374,7 @@ header {
   }
 }
 .about h2 {
-  font-family: "Avenir";
+  font-family: "Avenir", "Montserrat";
   font-size: 1.7rem;
   line-height: 32px;
   font-weight: 600;
@@ -385,7 +386,7 @@ header {
   }
 }
 .about h3 {
-  font-family: "Avenir";
+  font-family: "Avenir", "Montserrat";
   font-size: 1rem;
   line-height: 1.375rem;
   font-weight: 600;
@@ -397,7 +398,7 @@ header {
   }
 }
 .about p {
-  font-family: "Avenir";
+  font-family: "Avenir", "Montserrat";
   font-size: 14px;
   line-height: 22px;
   font-weight: 400;
@@ -482,7 +483,7 @@ header {
   padding-right: 16px;
   padding-top: 26px;
   padding-bottom: 16px;
-  font-family: "Avenir";
+  font-family: "Avenir", "Montserrat";
   color: #323232;
   background-color: #FAFAFA;
 }
@@ -505,7 +506,7 @@ header {
   }
 }
 .gallery h2 {
-  font-family: "Avenir";
+  font-family: "Avenir", "Montserrat";
   font-size: 1.7rem;
   line-height: 32px;
   font-weight: 600;
@@ -544,7 +545,7 @@ header {
   padding-right: 16px;
   padding-top: 26px;
   padding-bottom: 16px;
-  font-family: "Avenir";
+  font-family: "Avenir", "Montserrat";
   color: #323232;
 }
 @media (min-width: 768px) {
@@ -566,7 +567,7 @@ header {
   }
 }
 .comments h2 {
-  font-family: "Avenir";
+  font-family: "Avenir", "Montserrat";
   font-size: 1.7rem;
   line-height: 32px;
   font-weight: 600;
@@ -578,7 +579,7 @@ header {
   }
 }
 .comments h3 {
-  font-family: "Avenir";
+  font-family: "Avenir", "Montserrat";
   font-size: 1rem;
   line-height: 1.375rem;
   font-weight: 600;
@@ -590,7 +591,7 @@ header {
   }
 }
 .comments p {
-  font-family: "Avenir";
+  font-family: "Avenir", "Montserrat";
   font-size: 14px;
   line-height: 22px;
   font-weight: 400;
@@ -638,7 +639,7 @@ header {
   }
 }
 .comments form {
-  font-family: "Avenir";
+  font-family: "Avenir", "Montserrat";
   color: #AFAFAF;
   font-size: 0.625rem;
   line-height: 20px;
@@ -656,7 +657,7 @@ header {
 }
 .comments form button, .comments form input[type=submit] {
   background-color: #323232;
-  font-family: "Avenir";
+  font-family: "Avenir", "Montserrat";
   color: #FFFFFF;
   font-weight: 500;
   text-transform: uppercase;
@@ -678,7 +679,7 @@ header {
   }
 }
 .comments form input[type=text], .comments form textarea {
-  font-family: "Avenir";
+  font-family: "Avenir", "Montserrat";
   color: #323232;
   border: 1px solid;
   border-color: #E1E1E1;
@@ -727,7 +728,7 @@ header {
   }
 }
 .comments__render__display h6 {
-  font-family: "Avenir";
+  font-family: "Avenir", "Montserrat";
   font-size: 14px;
   line-height: 22px;
   font-weight: 400;

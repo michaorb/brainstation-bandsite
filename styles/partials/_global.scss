@@ -1,8 +1,9 @@
 @use "variables" as *;
 @use "mixins" as *;
-
+@use "typography" as *;
 body {
     margin: 0;
+    font-family: $BandSite-Font; 
     a {
         color: inherit;
         text-decoration: inherit;
