@@ -103,24 +103,24 @@ header {
     margin-top: 0;
   }
 }
-.navigation__menu li {
+.navigation__item {
   width: 50%;
   padding-bottom: 36px;
 }
-.navigation__menu li:hover {
+.navigation__item:hover {
   text-decoration: none;
   border-bottom: 5px solid;
   border-color: #FFFFFF;
 }
-.navigation__menu li:hover a {
+.navigation__item:hover a {
   text-decoration: none;
   color: #FFFFFF;
 }
-.navigation__menu--current {
+.navigation__item--current {
   border-bottom: 5px solid;
   border-color: #FFFFFF;
 }
-.navigation__menu--current a {
+.navigation__item--current a {
   text-decoration: none;
   color: #FFFFFF;
 }

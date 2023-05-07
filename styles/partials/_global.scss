@@ -48,11 +48,11 @@ header { // *** The Header
             gap: 5vw;
             margin-top: 0;
         }
-        li { // menu links
-            width: 50%;
-            padding-bottom: 36px;
-            @include hover-state-link; // hover state link
-        }
+    }
+    &__item { //menu links
+        width: 50%;
+        padding-bottom: 36px;
+        @include hover-state-link; // hover state link
         &--current { // active link
             border-bottom: 5px solid;
             border-color: $White;
