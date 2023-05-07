@@ -50,11 +50,12 @@ header {
   width: 100vw;
   height: auto;
 }
-header .navigation-bar {
+
+.navigation {
   text-align: center;
 }
 @media (min-width: 768px) {
-  header .navigation-bar {
+  .navigation {
     display: flex;
     margin: 0;
     padding-top: 36px;
@@ -67,22 +68,22 @@ header .navigation-bar {
   }
 }
 @media (min-width: 1280px) {
-  header .navigation-bar {
+  .navigation {
     padding-left: 15vw;
     padding-right: 15vw;
   }
 }
-header .navigation-bar__left .site-logo {
+.navigation__left .site-logo {
   max-height: 20px;
   max-width: 120px;
   padding-top: 5%;
 }
 @media (min-width: 768px) {
-  header .navigation-bar__left .site-logo {
+  .navigation__left .site-logo {
     padding-top: 0;
   }
 }
-header .navigation-bar__right .navigation-menu {
+.navigation__menu {
   list-style-type: none;
   padding: 0;
   margin-bottom: 0;
@@ -90,36 +91,36 @@ header .navigation-bar__right .navigation-menu {
   flex-direction: row;
   justify-content: space-around;
 }
-header .navigation-bar__right .navigation-menu a {
+.navigation__menu a {
   text-decoration: none;
   font-family: "Avenir";
   color: #E1E1E1;
 }
 @media (min-width: 768px) {
-  header .navigation-bar__right .navigation-menu {
+  .navigation__menu {
     gap: 5vw;
     margin-top: 0;
   }
 }
-header .navigation-bar__right .navigation-menu li {
+.navigation__menu li {
   width: 50%;
   padding-bottom: 36px;
 }
-header .navigation-bar__right .navigation-menu li:hover {
+.navigation__menu li:hover {
   text-decoration: none;
   border-bottom: 5px solid;
   border-color: #FFFFFF;
 }
-header .navigation-bar__right .navigation-menu li:hover a {
+.navigation__menu li:hover a {
   text-decoration: none;
   font-family: "Avenir";
   color: #FFFFFF;
 }
-header .navigation-bar__right .navigation-menu .navigation-menu--current {
+.navigation__menu--current {
   border-bottom: 5px solid;
   border-color: #FFFFFF;
 }
-header .navigation-bar__right .navigation-menu .navigation-menu--current a {
+.navigation__menu--current a {
   text-decoration: none;
   font-family: "Avenir";
   color: #FFFFFF;
@@ -157,43 +158,43 @@ header .navigation-bar__right .navigation-menu .navigation-menu--current a {
     padding-bottom: 36px;
   }
 }
-.contact__header-container {
+.contact__header {
   display: flex;
   flex-direction: column;
 }
-.contact__header-container h2 {
+.contact__header h2 {
   font-family: "Avenir";
   font-size: 1.7rem;
   line-height: 32px;
   font-weight: 600;
 }
 @media (min-width: 768px) {
-  .contact__header-container h2 {
+  .contact__header h2 {
     font-size: 2.4rem;
     line-height: 68px;
   }
 }
-.contact__header-container h2 {
+.contact__header h2 {
   margin: 0;
   font-weight: 600;
 }
-.contact__header-container .contact__header-icons {
+.contact__header .contact__icons {
   padding-top: 24px;
   display: flex;
   -moz-column-gap: 30px;
        column-gap: 30px;
 }
-.contact__header-container .contact__header-icons img {
+.contact__header .contact__icons img {
   width: auto;
   height: 20px;
 }
 @media (min-width: 768px) {
-  .contact__header-container .contact__header-icons {
+  .contact__header .contact__icons {
     padding: 0;
   }
 }
 @media (min-width: 768px) {
-  .contact__header-container {
+  .contact__header {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -228,27 +229,27 @@ header .navigation-bar__right .navigation-menu .navigation-menu--current a {
     padding-bottom: 36px;
   }
 }
-.contact__contacts .contact__contacts-column {
+.contact__contacts__column {
   padding-bottom: 30px;
   line-height: 10px;
 }
 @media (min-width: 768px) {
-  .contact__contacts .contact__contacts-column {
+  .contact__contacts__column {
     display: flex;
     flex-direction: column;
     padding-bottom: 20px;
   }
 }
-.contact__contacts .contact__contacts-name {
+.contact__contacts .contact__name {
   font-weight: 600;
   padding-bottom: 5px;
   width: -moz-max-content;
   width: max-content;
 }
-.contact__contacts .contact__contacts-location {
+.contact__contacts .contact__location {
   padding-bottom: 5px;
 }
-.contact__contacts .contact__contacts-email {
+.contact__contacts .contact__email {
   padding-bottom: 5px;
 }
 @media (min-width: 768px) {
