@@ -1,35 +1,4 @@
-let showsArray = [
-    {
-        date: "Sept 06 2021",
-        venue: "Ronald Lane",
-        location: "San Francisco, CA"
-    },
-    {
-        date: "Sept 21 2021",
-        venue: "Pier 3 East",
-        location: "San Francisco, CA"
-    },
-    {
-        date: "Oct 15 2021",
-        venue: "View Lounge",
-        location: "San Francisco, CA"
-    },
-    {
-        date: "Nov 06 2021",
-        venue: "Hyatt Agency",
-        location: "San Francisco, CA"
-    },
-    {
-        date: "Nov 26 2021",
-        venue: "Moscow Center",
-        location: "San Francisco, CA"
-    },
-    {
-        date: "Dec 15 2021",
-        venue: "Press Club",
-        location: "San Francisco, CA"
-    }
-];
+let showsArray = [];
 
 function clickEvent(event) {
     const currentActive = document.querySelector(".shows__container--active");
@@ -77,6 +46,15 @@ function createShowHtml(show) {
     return container;
 }
 
+const renderShowsArray = () => {
+    let showsWrapper = document.querySelector(".shows__wrapper");
+    for (let i = 0; i < showsArray.length; i++) {
+        let htmlElement = createShowHtml(showsArray[i]);
+        showsWrapper.appendChild(htmlElement);
+        let divider = document.createElement("hr");
+        showsWrapper.appendChild(divider);
+    }
+}
 let showsWrapper = document.querySelector(".shows__wrapper");
 for (let i = 0; i < showsArray.length; i++) {
     let htmlElement = createShowHtml(showsArray[i]);
@@ -84,3 +62,18 @@ for (let i = 0; i < showsArray.length; i++) {
     let divider = document.createElement("hr");
     showsWrapper.appendChild(divider);
 }
+
+const getShowDates = () => {
+    const showDatePromise = axios.get("https://project-1-api.herokuapp.com/showdates?api_key=c9501e69-3b36-44fe-82c2-9b085178140d");
+    showDatePromise.then((response) => {
+        let data = response.data; 
+        for (let i = 0; i < data.length; i++) {
+            data[i].venue = data[i].place;
+            let date = new Date (data[i].date);
+            data[i].date = date.toLocaleDateString();
+        }
+        showsArray = data;
+        renderShowsArray();
+    })
+}
+getShowDates();
