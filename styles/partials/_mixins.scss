@@ -3,21 +3,17 @@
 
 // Font Colors Only
 @mixin primary-text-dark { //Primary text color for dark on light background. Dark background color.*/
-    font-family: $BandSite-Font; 
     color: $BandSite-Black;
 }
 @mixin secondary-text { //Secondary text color. Inactive CTA text color.*/
-    font-family: $BandSite-Font;
     color: $Silver;
 }
 @mixin primary-text-white { //Primary text color for light on dark background. Light color background. Active CTA text color.*/
-    font-family: $BandSite-Font;
     color: $White;
 }
 // Font Styles Only (without colors)
 @mixin page-header { // Page Header - Mobile
     h1 {
-        font-family: $BandSite-Font;
         font-size: 2.2rem;
         line-height: 40px;
         font-weight: 600;
@@ -30,7 +26,6 @@
 }
 @mixin section-header { // Section Header - Mobile
     h2 {
-        font-family: $BandSite-Font;
         font-size: 1.7rem;
         line-height: 32px;
         font-weight: 600;
@@ -42,7 +37,6 @@
 }
 @mixin subheader { // Subheader - Mobile
     h3 {
-        font-family: $BandSite-Font;
         font-size: 1rem;
         line-height: 1.375rem;
         font-weight: 600;
@@ -54,7 +48,6 @@
 }
 @mixin shows-subheader { // Shows Subheader - Mobile
     h4, h5 {
-        font-family: $BandSite-Font;
         color: $Silver;
         font-size: 0.8rem;
         line-height: 1.375rem;
@@ -68,7 +61,6 @@
 }
 @mixin body-copy { // Body Copy - Mobile
     p {
-        font-family: $BandSite-Font;
         font-size: 14px;
         line-height: 22px;
         font-weight: 400;
@@ -79,7 +71,6 @@
     }
 }
 @mixin footer-copy { // Footer - Mobile
-    font-family: $BandSite-Font;
     font-size: 14px;
     line-height: 20px;
     font-weight: 400;
@@ -89,7 +80,6 @@
         }
 }
 @mixin labels-button-text { // Labels and Buttons Text - Mobile
-    font-family: $BandSite-Font;
     color: $Silver;
     font-size: 0.625rem;
     line-height: 20px;
@@ -102,7 +92,6 @@
 }
 @mixin comment-text {
     h6 {
-        font-family: $BandSite-Font;
         font-size: 14px;
         line-height: 22px;
         font-weight: 400;

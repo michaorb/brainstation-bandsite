@@ -114,7 +114,6 @@ header {
 }
 .navigation__menu li:hover a {
   text-decoration: none;
-  font-family: "Avenir", "Montserrat";
   color: #FFFFFF;
 }
 .navigation__menu--current {
@@ -123,14 +122,12 @@ header {
 }
 .navigation__menu--current a {
   text-decoration: none;
-  font-family: "Avenir", "Montserrat";
   color: #FFFFFF;
 }
 
 .contact {
   background-color: #323232;
   color: #FFFFFF;
-  font-family: "Avenir", "Montserrat";
   color: #FFFFFF;
   padding-left: 16px;
   padding-right: 16px;
@@ -164,7 +161,6 @@ header {
   flex-direction: column;
 }
 .contact__header h2 {
-  font-family: "Avenir", "Montserrat";
   font-size: 1.7rem;
   line-height: 32px;
   font-weight: 600;
@@ -211,7 +207,6 @@ header {
   }
 }
 .contact__contacts {
-  font-family: "Avenir", "Montserrat";
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
@@ -291,7 +286,6 @@ header {
   background-position: right;
   display: flex;
   align-items: center;
-  font-family: "Avenir", "Montserrat";
   color: #FFFFFF;
   padding-left: 16px;
   padding-right: 16px;
@@ -311,7 +305,6 @@ header {
   }
 }
 .hero-shows h1 {
-  font-family: "Avenir", "Montserrat";
   font-size: 2.2rem;
   line-height: 40px;
   font-weight: 600;
@@ -324,7 +317,6 @@ header {
   }
 }
 .hero-shows h3 {
-  font-family: "Avenir", "Montserrat";
   font-size: 1rem;
   line-height: 1.375rem;
   font-weight: 600;
@@ -394,7 +386,6 @@ header {
   padding-right: 16px;
   padding-top: 26px;
   padding-bottom: 16px;
-  font-family: "Avenir", "Montserrat";
   color: #323232;
 }
 @media (min-width: 768px) {
@@ -416,7 +407,6 @@ header {
   }
 }
 .shows h2 {
-  font-family: "Avenir", "Montserrat";
   font-size: 1.7rem;
   line-height: 32px;
   font-weight: 600;
@@ -428,7 +418,6 @@ header {
   }
 }
 .shows h4, .shows h5 {
-  font-family: "Avenir", "Montserrat";
   color: #AFAFAF;
   font-size: 0.8rem;
   line-height: 1.375rem;
@@ -442,7 +431,6 @@ header {
   }
 }
 .shows p {
-  font-family: "Avenir", "Montserrat";
   font-size: 14px;
   line-height: 22px;
   font-weight: 400;
@@ -455,7 +443,6 @@ header {
 }
 .shows button, .shows input[type=submit] {
   background-color: #323232;
-  font-family: "Avenir", "Montserrat";
   color: #FFFFFF;
   font-weight: 500;
   text-transform: uppercase;
