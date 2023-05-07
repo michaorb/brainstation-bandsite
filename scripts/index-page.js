@@ -6,10 +6,10 @@ let getCommentArray = () => {
         let responseData = response.data;
         console.log(responseData);
         commentArray = responseData.reverse();
-        for (let i = 0; i < commentArray.length; i++) {
-            let date = new Date(commentArray[i].timestamp);
-            commentArray[i].timestamp = date.toLocaleDateString();
-        }
+        commentArray.forEach(element => {
+            let date = new Date(element.timestamp);
+            element.timestamp = date.toLocaleDateString();
+        });
         renderComments();
     });
 };
@@ -44,11 +44,11 @@ function renderComments () {
     while (display.firstChild) {
         display.removeChild (display.firstChild);
     }
-    for (let i = 0; i < commentArray.length; i++) {
-        display.appendChild(createCommentHtml(commentArray[i]));
+    commentArray.forEach((element) => {
+        display.appendChild(createCommentHtml(element));
         const divider = document.createElement("HR");
         display.appendChild(divider);
-    }
+    })
 };
 // function that creates an HTML Element from a comment object from the array
 function createCommentHtml (comment) {
