@@ -171,25 +171,6 @@ header {
     line-height: 68px;
   }
 }
-.contact__header h2 {
-  margin: 0;
-  font-weight: 600;
-}
-.contact__header .contact__icons {
-  padding-top: 24px;
-  display: flex;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
-}
-.contact__header .contact__icons img {
-  width: auto;
-  height: 20px;
-}
-@media (min-width: 768px) {
-  .contact__header .contact__icons {
-    padding: 0;
-  }
-}
 @media (min-width: 768px) {
   .contact__header {
     display: flex;
@@ -198,6 +179,25 @@ header {
     -moz-column-gap: 40px;
          column-gap: 40px;
   }
+}
+.contact__icons {
+  padding-top: 24px;
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+@media (min-width: 768px) {
+  .contact__icons {
+    padding: 0;
+  }
+}
+.contact__icon {
+  width: auto;
+  height: 20px;
+}
+.contact__getInTouch {
+  margin: 0;
+  font-weight: 600;
 }
 @media (min-width: 768px) {
   .contact {

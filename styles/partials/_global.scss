@@ -73,28 +73,29 @@ header { // *** The Header
         display: flex;
         flex-direction: column;
         @include section-header;
-        h2 { // subheader
-            margin: 0;
-            font-weight: 600; 
-        }
-        .contact__icons { // social media icons
-            padding-top: 24px;
-            display: flex;
-            column-gap: 30px;
-            img {
-                width: auto;
-                height: 20px;
-            }
-            @media (min-width: $bp-tablet) { // social media icons media query for tablet mode and higher
-                padding: 0;
-            }
-        }
         @media (min-width: $bp-tablet) { // section header container media query for tablet mode and higher
             display: flex;
             flex-direction: row;
             align-items: center;
             column-gap: 40px;
         }
+    }
+    &__icons { // social media icons
+        padding-top: 24px;
+        display: flex;
+        column-gap: 30px;
+
+        @media (min-width: $bp-tablet) { // social media icons media query for tablet mode and higher
+            padding: 0;
+        }
+    }
+    &__icon { // individual social media icon
+        width: auto;
+        height: 20px;
+    }
+    &__getInTouch {
+        margin: 0;
+        font-weight: 600; 
     }
     @media (min-width: $bp-tablet) { // media query for entire contact section
         display: flex;
