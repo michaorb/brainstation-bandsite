@@ -27,8 +27,8 @@ function formSubmit (event) {
     event.preventDefault();
     const formFields = event.target.elements;
     const comment = {
-        name: formFields.name.value,
-        comment: formFields.comment.value,
+        name: formFields.comments__name.value,
+        comment: formFields.comments__comment.value,
         timestamp: new Date().toLocaleDateString("en-US")
     };
     const postComment = axios.post("/comments", 
