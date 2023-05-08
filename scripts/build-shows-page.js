@@ -1,3 +1,9 @@
+// Axios default configuration
+axios.defaults.baseURL = "https://project-1-api.herokuapp.com";
+axios.defaults.params = {};
+axios.defaults.params['api_key'] = "c9501e69-3b36-44fe-82c2-9b085178140d"
+
+// Global object holding all shows info
 let showsArray = [];
 
 function clickEvent(event) {
@@ -64,7 +70,7 @@ for (let i = 0; i < showsArray.length; i++) {
 }
 
 const getShowDates = () => {
-    const showDatePromise = axios.get("https://project-1-api.herokuapp.com/showdates?api_key=c9501e69-3b36-44fe-82c2-9b085178140d");
+    const showDatePromise = axios.get("/showdates");
     showDatePromise.then((response) => {
         let data = response.data; 
         for (let i = 0; i < data.length; i++) {

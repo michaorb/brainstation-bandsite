@@ -1,7 +1,12 @@
+// Axios default configuration
+axios.defaults.baseURL = "https://project-1-api.herokuapp.com";
+axios.defaults.params = {};
+axios.defaults.params['api_key'] = "c9501e69-3b36-44fe-82c2-9b085178140d"
+
 // Global array that stores all comments
 let commentArray = [];
 let getCommentArray = () => {
-    const promise = axios.get("https://project-1-api.herokuapp.com/comments?api_key=c9501e69-3b36-44fe-82c2-9b085178140d");
+    const promise = axios.get("/comments");
     promise.then((response) => {
         let responseData = response.data;
         console.log(responseData);
@@ -14,6 +19,7 @@ let getCommentArray = () => {
     });
 };
 getCommentArray();
+
 //Functions
 
 // Event handler for form submission
@@ -25,7 +31,7 @@ function formSubmit (event) {
         comment: formFields.comment.value,
         timestamp: new Date().toLocaleDateString("en-US")
     };
-    const postComment = axios.post("https://project-1-api.herokuapp.com/comments?api_key=c9501e69-3b36-44fe-82c2-9b085178140d", 
+    const postComment = axios.post("/comments", 
         {
             name: comment.name,
             comment: comment.comment
