@@ -43,6 +43,10 @@ body a {
   text-decoration: inherit;
 }
 
+button {
+  font-family: "Avenir", "Montserrat";
+}
+
 header {
   background-color: #323232;
   color: #FFFFFF;
@@ -270,6 +274,11 @@ header {
     right: 0;
     padding-right: 5%;
     padding-top: 20px;
+  }
+}
+@media (min-width: 1280px) {
+  .contact__logo {
+    padding-right: 15%;
   }
 }
 @media (min-width: 768px) {

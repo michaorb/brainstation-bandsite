@@ -36,7 +36,7 @@
         width: 100%;
         height: auto;
         background-size: cover;
-        @media (min-width: $bp-tablet) { // Media query for tablet mode and higher
+        @include media-tablet{ // Media query for tablet mode and higher
             width: 100%;
             aspect-ratio: 16 / 9;
             object-fit: cover;
@@ -56,7 +56,7 @@
         q {
             display: block;
             padding-bottom: 5px;
-            @media (min-width: $bp-tablet) { // Media query for tablet mode and higher
+            @include media-tablet{ // Media query for tablet mode and higher
                 font-size: 1.4rem;
                 line-height: 30px;
                 padding-top: 20px;
@@ -65,12 +65,12 @@
 
     }
     h3 { // About subheader
-        @media (min-width: $bp-tablet) { // Media query for tablet mode and higher
+        @include media-tablet{ // Media query for tablet mode and higher
             padding-top: 20px;
         }
     }
     &__text { // About text
-        @media (min-width: $bp-tablet) { // Media query for tablet mode and higher
+        @include media-tablet{ // Media query for tablet mode and higher
             display: flex;
             column-gap: 30px;
             justify-content: space-around;
@@ -93,7 +93,7 @@
         height: auto;
         background-size: cover;
         padding-bottom: 10px;
-        @media  (min-width: $bp-tablet) { // Media query for tablet mode and higher
+        @include media-tablet{ // Media query for tablet mode and higher
             width: 30%;
             padding-bottom: 0;
         }

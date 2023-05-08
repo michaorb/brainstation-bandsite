@@ -18,10 +18,10 @@
     align-items: initial; // Change this in the hero mixin?
     height: auto;
     &__header {
-        @media (min-width: $bp-tablet) {
+        @include media-tablet{
             width: 75%;
         }
-        @media (min-width: $bp-desktop) {
+        @include media-desktop{
             width: 500px;
         }
     }
@@ -30,16 +30,16 @@
         margin-bottom: 0;
     }
     h1 {
-        @media (min-width: $bp-tablet) {
+        @include media-tablet{
             margin-top: 20px;
         }
     }
     iframe {
         height: auto;
-        @media (min-width: $bp-tablet) {
+        @include media-tablet{
             width: 55%;
         }
-        @media (min-width: $bp-desktop) {
+        @include media-desktop{
             width: auto;
         }
     }
@@ -55,17 +55,17 @@
     @include body-copy;
     @include primary-text-dark;
     @include cta-button;
-    @media (min-width: $bp-desktop) {
+    @include media-desktop{
         display: flex;
         gap: 100px;
     }
     &__wrapper {
-        @media (min-width: $bp-desktop) {
+        @include media-desktop{
             flex-grow: 1;
         }
     }
     &__container {
-        @media (min-width: $bp-tablet) {
+        @include media-tablet{
             display: flex;
             justify-content: space-between;
         }
@@ -78,7 +78,7 @@
     }
     &__container-bp {
         display: none;
-        @media (min-width: $bp-tablet) {
+        @include media-tablet{
             display: flex;
             justify-content: space-between;
             button {
@@ -86,19 +86,19 @@
             }
             h5 {
                 width: 120px;
-                @media (min-width: $bp-tablet) {
+                @include media-tablet{
                     margin-bottom: 15px;
                 }
             }
         }
     }
     h4 {
-        @media (min-width: $bp-tablet) {
+        @include media-tablet{
             display: none;
         }
     }
     p {
-        @media (min-width: $bp-tablet) {
+        @include media-tablet{
             width: 120px;
         }
     }
